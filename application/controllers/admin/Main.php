@@ -46,8 +46,8 @@ class Main extends CI_Controller {
 			$this->load->view('sabyrov');
 
 	}
-	public function beksultan ()
+	public function sssssssssssssss ()
 	{
-		$this->load->view('fffffffffffffffff');
+		$this->load->view('sssssssssssssssssss');
 	}
 }
