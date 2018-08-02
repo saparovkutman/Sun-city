@@ -36,4 +36,8 @@ class Main extends CI_Controller {
 	{
 		$this->load->view('sdd');
 	}
+	public function bekaa()
+	{
+			$this->load->view('sabyrov');
+	}
 }
