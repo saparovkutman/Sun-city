@@ -16,6 +16,7 @@
     echo link_tag('assets/admin/dist/css/style.css');
     echo link_tag('assets/admin/dist/css/pages/dashboard1.css');
     ?>
+    
     <title>Admin Template</title>
     <!-- This page CSS -->
     <!-- chartist CSS -->

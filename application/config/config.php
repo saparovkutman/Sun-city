@@ -23,12 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-<<<<<<< HEAD
-$config['base_url'] = 'http://admin.pr/';
-=======
-$config['base_url'] = 'http://localhost/Sun-city';
->>>>>>> 77101db2e45ae2415b16dc5067839e994d300616
-
+$config['base_url'] = 'http://php2.kg/';
 /*
 |--------------------------------------------------------------------------
 | Index File
