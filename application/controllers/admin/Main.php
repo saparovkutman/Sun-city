@@ -36,6 +36,7 @@ class Main extends CI_Controller {
 	{
 		$this->load->view('sdd');
 	}
+<<<<<<< HEAD
     public function cataloaagaASDASs_view()
 	{
 		$this->load->view('ASDSADSA');
@@ -47,5 +48,20 @@ class Main extends CI_Controller {
     public function actionnnnn()
 	{
 			$this->load->view('actionnnnn');
+=======
+
+    public function cataloaagaASDASs_view()
+	{
+		$this->load->view('ASDSADSA');
+
+	public function bekaa()
+	{
+			$this->load->view('sabyrov');
+
+	}
+	public function beksultan ()
+	{
+		$this->load->view('fffffffffffffffff');
+>>>>>>> 92e69754608d62b950dd02680e8567b64a38e5ed
 	}
 }
