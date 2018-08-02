@@ -65,6 +65,7 @@ $route['admin/podcatalogs'] = '/admin/main/podcatalogs';
 
 
 $route['admin/users'] = '/admin/main/users';
+$route['admin/profile'] = '/admin/main/profile';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

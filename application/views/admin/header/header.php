@@ -10,11 +10,13 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url() ?>assets/admin/assets/images/favicon.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <?php 
     echo link_tag('assets/admin/assets/node_modules/morrisjs/morris.css');
     echo link_tag('assets/admin/assets/node_modules/c3-master/c3.min.css');
     echo link_tag('assets/admin/dist/css/style.css');
     echo link_tag('assets/admin/dist/css/pages/dashboard1.css');
+    echo link_tag('assets/admin/dist/css/style_modalka.css');
     ?>
     
     <title>Admin Template</title>
@@ -89,7 +91,7 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <li><a class="waves-effect waves-dark" href="/admin/reserve" aria-expanded="false"><i class="fa fa-shield"></i><span class="hide-menu">Бронирование</span></a></li>
-                        <li> <a class="waves-effect waves-dark" href="pages-profile.html" aria-expanded="false"><i class="fa fa-user-circle-o"></i><span class="hide-menu">Profile</span></a></li>
+                        <li> <a class="waves-effect waves-dark" href="/admin/profile" aria-expanded="false"><i class="fa fa-user-circle-o"></i><span class="hide-menu">Profile</span></a></li>
                         <li> <a class="waves-effect waves-dark" href="/admin/users" aria-expanded="false"><i class="fa fa-table"></i><span class="hide-menu"></span>Пользователи</a></li>
                         <li> <a class="waves-effect waves-dark" href="icon-fontawesome.html" aria-expanded="false"><i class="fa fa-smile-o"></i><span class="hide-menu"></span>Icon</a></li>
                         <li> <a class="waves-effect waves-dark" href="map-google.html" aria-expanded="false"><i class="fa fa-globe"></i><span class="hide-menu"></span>Map</a></li>

@@ -64,6 +64,12 @@ class Main extends CI_Controller {
 		$this->load->view('admin/users');
 		$this->load->view('admin/footer/footer.php');
 	}
+	public function profile()
+	{
+		$this->load->view('admin/profile');
+		$this->load->view('admin/footer/footer.php');
+	}
+
 	public function catalogs()
 	{
 		$this->load->view('catalogs');
