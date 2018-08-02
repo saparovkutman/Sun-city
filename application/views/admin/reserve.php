@@ -1,4 +1,4 @@
-        <!-- ============================================================== -->
+<!-- ============================================================== -->
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
         <div class="page-wrapper">
@@ -11,73 +11,91 @@
                 <!-- ============================================================== -->
                 <div class="row page-titles">
                     <div class="col-md-5 align-self-center">
-                        <button type="button" class="btn btn-primary">Add</button>
-                        <h4 class="text-themecolor">Blank Page</h4>
+                        <h4 class="text-themecolor">Таблица бронирования</h4>
                     </div>
                     <div class="col-md-7 align-self-center text-right">
                         <div class="d-flex justify-content-end align-items-center">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                                <li class="breadcrumb-item active">Blank Page</li>
-                            </ol>                           
+                                <li class="breadcrumb-item active">Бронирование</li>
+                            </ol>                            
                         </div>
                     </div>
                 </div>
                 <!-- ============================================================== -->
                 <!-- End Bread crumb and right sidebar toggle -->
                 <!-- ============================================================== -->
+                
                 <!-- ============================================================== -->
-                <!-- Start Page Content -->
+                <!-- News -->
                 <!-- ============================================================== -->
-                <div class="row">                               
-                    <div class="col-lg-4 col-xlg-3 col-md-5">
+                <div class="row">
+                    <!-- column -->
+                    <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <center class="m-t-30"><img src="../assets/images/users/1.jpg" width="300" class="img-thumbnail" />
-                                    <h4 class="card-title m-t-10">Подкаталог</h4>
-                                    <h6 class="card-subtitle">Описание</h6>                            
-                                    <button type="button" class="btn btn-success">Update</button>
-                                    <button type="button" class="btn btn-danger">Delete</button>      
-                                </center>
+                                <div class="d-flex">
+                                    <div>
+                                        <h5 class="card-title">Бронирование</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">#</th>
+                                            <th>NAME</th>                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center">1</td>
+                                            <td class="txt-oflo"><a href="/admin/reserve_vip">VIP бронирование</a></td>                                           
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">2</td>
+                                            <td class="txt-oflo"><a href="/admin/reserve_kitchen">Бронирование кухни</a></td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">3</td>
+                                            <td class="txt-oflo"><a href="/admin/reserve_show">Бронирование билетов на шоу</a></td>                       
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">4</td>
+                                            <td class="txt-oflo"><a href="/admin/reserve_search_car">Поиска транспорта</a></td>                                       
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">5</td>
+                                            <td class="txt-oflo"><a href="/admin/reserve_chip">Бронирование чипов</a></td>                               
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">6</td>
+                                            <td class="txt-oflo">Digital Agency PSD</td>
+                                            <td class="txt-oflo">April 23, 2017</td>
+                                            <td><span class="text-danger">-$14</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">7</td>
+                                            <td class="txt-oflo">Helping Hands WP Theme</td>
+                                            <td class="txt-oflo">April 22, 2017</td>
+                                            <td><span class="text-success">$64</span></td>
+                                        </tr>                                        
+                                        <tr>
+                                            <td class="text-center">9</td>
+                                            <td class="txt-oflo">Ample Admin</td>
+                                            <td class="txt-oflo">April 19, 2017</td>
+                                            <td><span class="text-info">$1250</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-xlg-3 col-md-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <center class="m-t-30"><img src="../assets/images/users/7.jpg" width="300" class="img-thumbnail" />
-                                    <h4 class="card-title m-t-10">Подкаталог</h4>
-                                    <h6 class="card-subtitle">Описание</h6>                            
-                                    <button type="button" class="btn btn-success">Update</button>
-                                    <button type="button" class="btn btn-danger">Delete</button>      
-                                </center>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-xlg-3 col-md-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <center class="m-t-30"><img src="../assets/images/users/4.jpg" width="300" class="img-thumbnail" />
-                                    <h4 class="card-title m-t-10">Подкаталог</h4>
-                                    <h6 class="card-subtitle">Описание</h6>                            
-                                    <button type="button" class="btn btn-success">Update</button>
-                                    <button type="button" class="btn btn-danger">Delete</button>      
-                                </center>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- ============================================================== -->
-                <!-- End PAge Content -->
-                <!-- ============================================================== -->
-            </div>
-            <!-- ============================================================== -->
-            <!-- End Container fluid  -->
-            <!-- ============================================================== -->
+                </div>               
+            </div>            
         </div>
         <!-- ============================================================== -->
         <!-- End Page wrapper  -->
         <!-- ============================================================== -->
-        

@@ -50,16 +50,16 @@
                                     <tbody>
                                         <tr>
                                             <td class="text-center">1</td>
-                                            <td class="txt-oflo"><a href="bronirovanie-podkatalogi-vip.html">Каталог 1</a></td>                                           
+                                            <td class="txt-oflo"><a href="/admin/catalogs_one">Каталог 1</a></td>                                           
                                         </tr>
                                         <tr>
                                             <td class="text-center">2</td>
-                                            <td class="txt-oflo"><a href="bronirovanie-podkatalogi-kitchen.html">Каталог 2</a></td>
+                                            <td class="txt-oflo"><a href="/admin/catalogs_two">Каталог 2</a></td>
                                             
                                         </tr>
                                         <tr>
                                             <td class="text-center">3</td>
-                                            <td class="txt-oflo"><a href="bronirovanie-podkatalogi.html">Каталог 3</a></td>                       
+                                            <td class="txt-oflo"><a href="/admin/catalogs_three">Каталог 3</a></td>                       
                                         </tr>
                                         <tr>
                                             <td class="text-center">5</td>

@@ -52,6 +52,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['admin'] = '/admin/main/index';
 $route['admin/reserve'] = '/admin/main/reserve';
+$route['admin/reserve_vip'] = '/admin/main/reserve_vip';
+$route['admin/reserve_kitchen'] = '/admin/main/reserve_kitchen';
+$route['admin/reserve_show'] = '/admin/main/reserve_show';
+$route['admin/reserve_search_car'] = '/admin/main/reserve_search_car';
+$route['admin/reserve_chip'] = '/admin/main/reserve_chip';
+
+$route['admin/catalogs_one'] = '/admin/main/catalogs_one';
+$route['admin/catalogs_two'] = '/admin/main/catalogs_two';
+$route['admin/catalogs_three'] = '/admin/main/catalogs_three';
+$route['admin/podcatalogs'] = '/admin/main/podcatalogs';
+
+
 $route['admin/users'] = '/admin/main/users';
 
 $route['404_override'] = '';

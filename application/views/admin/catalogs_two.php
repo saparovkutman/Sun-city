@@ -1,8 +1,7 @@
         <!-- ============================================================== -->
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
-        <div class="page-wrapper">
-            <div id="maska"></div>
+        <div class="page-wrapper">            
             <!-- ============================================================== -->
             <!-- Container fluid  -->
             <!-- ============================================================== -->
@@ -21,29 +20,10 @@
                                 <li class="breadcrumb-item active">Blank Page</li>                     
                             </ol>
                         </div><br>
-                        <button type="button" class="btn btn-primary">Add</button>
-
-                        <button class="w3-button w3-white w3-border" id="add_show">add</button>
-                        
-                        <div class="modalka">
-                        <div id="tablo_add" class="w3-row w3-card-4 modalka_add">
-                          <button class="w3-btn w3-right w3-large w3-hover-red w3-clear close">X</button>       
-                          <h2>ADD NEW CAR</h2>            
-                                <input type="text" name="text" class="pustoi" id="nazvanie_add" placeholder="nazvanie add"></input>
-                                <input type="text" name="text" class="pustoi" id="pole_cvet_add" placeholder="cvet add"></input><br><br>
-                                <input type="text" name="text" class="pustoi" id="korobka_peredach_add" placeholder="korobka_peredach add"></input>
-                                <input type="text" name="text" class="pustoi" id="pole_cena_add" placeholder="cena add"></input><br><br>
-                                <input type="radio" class="cars" name="cars" value="img/03.jpg" checked>BMW
-                                <img src="img/03.jpg" id="lexus" width="80" height="50">
-                                <input type="radio" class="cars" name="cars" value="img/02.jpg">X7
-                                <img src="img/02.jpg" id="porshe" width="80" height="50">
-                                <input type="radio" class="cars" name="cars" value="img/01.jpg">Porshe
-                                <img src="img/01.jpg" id="ferarri" width="80" height="50"><br><br>
-                                <button class="w3-button w3-white w3-border" id="add">Добавить</button>
-                          </div>
-                          </div>                
-                    </div>
+                        <button type="button" class="btn btn-primary">Add</button>                     
+                    </div>                
                 </div>
+            </div>
                 <!-- ============================================================== -->
                 <!-- End Bread crumb and right sidebar toggle -->
                 <!-- ============================================================== -->
