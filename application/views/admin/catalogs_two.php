@@ -29,15 +29,16 @@
                                 </span><br><br><br><br>
                                 <div class="content">                                
                                 <!-- <div class="w3-card-4"> -->
-                                    <form class="w3-container">
+<!--                                    <form id="forma_add" class="w3-container" action="javascript:void(0)">-->
+                                    <form id="forma_add" class="w3-container"  action="requestCatTwo/insert_cat_two" method="post" enctype="multipart/form-data">
                                       <p><label style="float: left;">Заголовок</label>
-                                      <input class="w3-input w3-border" name="zagolovok" type="text">
+                                      <input id="add_title" class="w3-input w3-border" name="zagolovok" type="text">
                                       </p>
                                       <p><label style="float: left">Описание</label>
-                                      <textarea rows="6" class="w3-input w3-border" name="opisanie">Beka</textarea>
+                                      <textarea id="add_content" rows="6" class="w3-input w3-border" name="opisanie"></textarea>
                                       </p>
-                                      <input class="w3-button w3-white" type="file" name="image" style="float: left;">
-                                      <input class="w3-button w3-indigo" type="submit" value="button">
+                                      <input id="add_img" class="w3-button w3-white" type="file" name="kartinka" style="float: left;">
+                                      <input  class="w3-button w3-indigo" type="submit" value="button">
                                     </form>
                                 <!-- </div> -->
                                 </div>                                
@@ -112,3 +113,25 @@
         $('#modalka').hide();
     });
 </script>
+        <script>
+            $(document).ready(function(){
+                $(document).on('click', '#add_cat_two', function(){
+                    var form_add= $("#forma_add")[0];
+                    var vse_polya_add= new FormData(form_add);
+                    var name_uni= $("#add_title").val();
+                    var name_uni2= $("#add_content").val();
+                    var name_uni3= $("#add_img").val();
+                    $.ajax({
+                        method: "POST",
+                        url: "<?php echo base_url().'/requestCatTwo/insert_cat_two'; ?>",
+                        data: vse_polya_add,
+                        contentType: false,
+                        processData: false,
+                    }).done(function(info){
+                        console.log(info);
+                        document.querySelector('#add_title').value='';
+
+                    });
+                });
+            });
+        </script>

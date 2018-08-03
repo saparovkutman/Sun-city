@@ -67,5 +67,10 @@ $route['admin/podcatalogs'] = '/admin/main/podcatalogs';
 $route['admin/users'] = '/admin/main/users';
 $route['admin/profile'] = '/admin/main/profile';
 
+//category_two
+$route['admin/request_two'] = 'admin/catalogs_two';
+$route['admin/insert_two'] = 'models/requestCatTwoModels';
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+

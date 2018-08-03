@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://admin.pr/';
+$config['base_url'] = 'http://kutman.kg/';
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -35,6 +35,7 @@ $config['base_url'] = 'http://admin.pr/';
 |
 */
 $config['index_page'] = 'index.php';
+
 
 /*
 |--------------------------------------------------------------------------
