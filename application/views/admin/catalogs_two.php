@@ -113,25 +113,25 @@
         $('#modalka').hide();
     });
 </script>
-        <script>
-            $(document).ready(function(){
-                $(document).on('click', '#add_cat_two', function(){
-                    var form_add= $("#forma_add")[0];
-                    var vse_polya_add= new FormData(form_add);
-                    var name_uni= $("#add_title").val();
-                    var name_uni2= $("#add_content").val();
-                    var name_uni3= $("#add_img").val();
-                    $.ajax({
-                        method: "POST",
-                        url: "<?php echo base_url().'/requestCatTwo/insert_cat_two'; ?>",
-                        data: vse_polya_add,
-                        contentType: false,
-                        processData: false,
-                    }).done(function(info){
-                        console.log(info);
-                        document.querySelector('#add_title').value='';
-
-                    });
-                });
-            });
-        </script>
+<!--        <script>-->
+<!--            $(document).ready(function(){-->
+<!--                $(document).on('click', '#add_cat_two', function(){-->
+<!--                    var form_add= $("#forma_add")[0];-->
+<!--                    var vse_polya_add= new FormData(form_add);-->
+<!--                    var name_uni= $("#add_title").val();-->
+<!--                    var name_uni2= $("#add_content").val();-->
+<!--                    var name_uni3= $("#add_img").val();-->
+<!--                    $.ajax({-->
+<!--                        method: "POST",-->
+<!--                        url: "--><?php //echo base_url().'/requestCatTwo/insert_cat_two'; ?>//",
+<!--//                        data: vse_polya_add,-->
+<!--//                        contentType: false,-->
+<!--//                        processData: false,-->
+<!--//                    }).done(function(info){-->
+<!--//                        console.log(info);-->
+<!--//                        document.querySelector('#add_title').value='';-->
+//
+<!--//                    });-->
+<!--//                });-->
+<!--//            });-->
+//        </script>
