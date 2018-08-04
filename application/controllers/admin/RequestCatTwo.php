@@ -18,4 +18,11 @@ class RequestCatTwo extends CI_Controller {
 //        header("location: http://kutman.kg/admin/catalogs_two");
     }
 
+//    public function update_cat_two() {
+//
+//        $this->load->model('admin/RequestCatTwoModels');
+//        $this->RequestCatTwoModels->update_cat_two();
+////        header("location: http://kutman.kg/admin/catalogs_two");
+//    }
+
 }
