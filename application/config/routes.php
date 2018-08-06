@@ -67,9 +67,20 @@ $route['admin/podcatalogs'] = '/admin/main/podcatalogs';
 $route['admin/users'] = '/admin/main/users';
 $route['admin/profile'] = '/admin/main/profile';
 
+//category_one
+$route['admin/request_one'] = 'admin/catalogs_one';
+$route['admin/insert_one'] = 'models/requestCatOneModels';
+$route['admin/update_one/(:any)'] = 'models/requestCatOneModels/$1';
+
 //category_two
 $route['admin/request_two'] = 'admin/catalogs_two';
 $route['admin/insert_two'] = 'models/requestCatTwoModels';
+$route['admin/update_two/(:any)'] = 'models/requestCatTwoModels/$1';
+
+//category_three
+$route['admin/request_three'] = 'admin/catalogs_three';
+$route['admin/insert_three'] = 'models/requestCatThreeModels';
+$route['admin/update_three/(:any)'] = 'models/requestCatThreeModels/$1';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
