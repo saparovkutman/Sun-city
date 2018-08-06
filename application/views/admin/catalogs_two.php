@@ -168,7 +168,12 @@
                 contentType: false,
                 processData: false,
             }).done(function(){
+<<<<<<< HEAD
                  window.location="/admin/catalogs_two";
+=======
+                // console.log();
+                window.location="/admin/catalogs_two";
+>>>>>>> 2e95f0c3178af647b7f60d150e526ed14945ba0a
                 $('#modal_edit').hide();
                 $("#forma_update")[0].reset();
             });

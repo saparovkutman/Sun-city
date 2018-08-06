@@ -104,6 +104,7 @@
                 <p><label style="float: left">Описание</label>
                     <textarea id="update_content" rows="6" class="w3-input w3-border form-control" name="content"></textarea>
                 </p>
+<<<<<<< HEAD
                 <input id="update_id" class="form-control" type="hidden" name="id" >
                 <input id="update_img" type="file" name="img_catone" style="float: left;">
                 <input id="update_img_name" type="hidden" name="img_name" style="float: left;">
@@ -111,6 +112,12 @@
                 <br>
                 <br>
                 <input id="update_cat_one" class="w3-button w3-indigo" type="submit" value="button" style="float:right;">
+=======
+                <input id="update_id" class="form-control" type="text" name="id" ><br><br>
+                <input id="update_img" class="w3-button w3-white form-control" type="file" name="img" style="float: left;">
+                <input id="update_img_name" class="w3-button w3-white form-control" type="text" name="img_name" style="float: left;">
+                <input id="update_cat_one" class="w3-button w3-indigo" type="submit" value="button">
+>>>>>>> 2e95f0c3178af647b7f60d150e526ed14945ba0a
             </form>
         </div>
     </div>
@@ -173,7 +180,12 @@
                 contentType: false,
                 processData: false,
             }).done(function(){
+<<<<<<< HEAD
                 window.location="/admin/catalogs_one"
+=======
+                // console.log();
+                window.location="/admin/catalogs_one";
+>>>>>>> 2e95f0c3178af647b7f60d150e526ed14945ba0a
                 $('#modal_edit').hide();
                 $("#forma_update")[0].reset();
             });
