@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1f63636-2abc-45b8-85b8-9c707155f86c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/application/controllers/admin/RequestCatTwo.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/admin/RequestCatTwo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/admin/RequestCatTwoModels.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/admin/RequestCatTwoModels.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/094f6a3a42e0b849d4928464021b52fa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/456a3cf041304dc9fed07beeed677351.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/642616d72e96e3b4f2303fbfe5f42632.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/a1e35e308c3ec200010a30c967f6d971.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/dc0964eec98ecdfe625e8ce93e579939.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,19 +54,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/admin/Main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/admin/RequestCatTwo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state relative-caret-position="206">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/admin/RequestCatTwoModels.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/admin/RequestCatOneModels.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1113">
+              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/models/admin/RequestCatTwoModels.php">
+        <entry file="file://$PROJECT_DIR$/application/models/admin/RequestCatThreeModels.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+            <state relative-caret-position="-1118">
+              <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -71,44 +101,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/admin/catalogs_two.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="39" column="111" selection-start-line="39" selection-start-column="103" selection-end-line="39" selection-end-column="111" />
+            <state relative-caret-position="184">
+              <caret line="39" column="94" selection-start-line="39" selection-start-column="94" selection-end-line="39" selection-end-column="94" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../Codeigniter/coder.kg/www/application/controllers/Models.php">
+        <entry file="file://$PROJECT_DIR$/application/views/admin/catalogs_three.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="777">
-              <caret line="55" column="36" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="36" />
+            <state relative-caret-position="170">
+              <caret line="39" column="96" selection-start-line="39" selection-start-column="96" selection-end-line="39" selection-end-column="96" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../Codeigniter/coder.kg/www/application/views/insert_car.php">
+        <entry file="file://$PROJECT_DIR$/application/views/admin/catalogs_one.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="71" column="100" selection-start-line="71" selection-start-column="71" selection-end-line="71" selection-end-column="100" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../Codeigniter/coder.kg/www/application/models/Models_model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-399">
-              <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/НЕ ТРОГАТЬ/Codeigniter/Улан/cart/application/controllers/Admin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="29" column="43" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="43" />
+            <state relative-caret-position="254">
+              <caret line="39" column="94" selection-start-line="39" selection-start-column="94" selection-end-line="39" selection-end-column="94" />
             </state>
           </provider>
         </entry>
@@ -157,6 +169,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -168,6 +181,12 @@
               <item name="Sun-city" type="b2602c69:ProjectViewProjectNode" />
               <item name="Sun-city" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sun-city" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sun-city" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Sun-city" type="b2602c69:ProjectViewProjectNode" />
@@ -201,11 +220,15 @@
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Sun-city" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sun-city" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -241,13 +264,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25564000" />
+    <option name="totallyTimeSpent" value="25747000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1651671" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16709511" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -306,8 +328,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/admin/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        <state relative-caret-position="21">
+          <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -471,13 +493,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/RequestCatTwoModels.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/RequestCatTwoModels.php" />
     <entry file="file://D:/НЕ ТРОГАТЬ/Codeigniter/Улан/cart/application/controllers/Admin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -487,22 +503,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/admin/catalogs_two.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="39" column="111" selection-start-line="39" selection-start-column="103" selection-end-line="39" selection-end-column="111" />
+        <state relative-caret-position="184">
+          <caret line="39" column="94" selection-start-line="39" selection-start-column="94" selection-end-line="39" selection-end-column="94" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/admin/RequestCatTwo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="206">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/admin/RequestCatTwoModels.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+        <state relative-caret-position="21">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
         </state>
       </provider>
     </entry>
