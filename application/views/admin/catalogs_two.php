@@ -31,13 +31,21 @@
         <!-- Start Page Content -->
         <!-- ============================================================== -->
     <div class="row">
-        <?php foreach ($data as $category): ?>
+        <?php foreach ($data as $category):
+               if($category->image_name){
+                $image=base_url()."assets/upload/images/cat_two/".$category->image_name;
+                    }
+                else{
+                    $image=base_url()."assets/upload/no-image.jpg";
+                }
+        ?>
+        
             <div class="col-lg-4 col-xlg-3 col-md-5">
                 <div class="card">
                     <div class="card-body">
                         <center class="m-t-30">
                             <a href="/admin/podcatalogs<?php echo $category->id ?>">
-                                <img src="<?php echo base_url()?>assets/upload/images/cat_two/<?php echo $category->image_name ?>" style="width: 80%; height: 200px;" class="img-thumbnail">
+                                <img src="<?php echo $image ?>" style="width: 80%; height: 200px;" class="img-thumbnail">
                                 <h4 class="card-title m-t-10"><?php echo $category->title ?></h4>
                             </a><br>
                             <h6 class="card-subtitle"><?php echo $category->description ?></h6>
@@ -63,7 +71,7 @@
     <div class="modal_content">
         <span class="close_modal close-modal" data-modalka_id="#modal_add">
             <i class="material-icons">close</i>
-        </span><br><br><br><br>
+        </span><br><br>
         <div class="content">
             <form id="forma_add" class="w3-container"  action="javascript:void(0)" method="post" enctype="multipart/form-data">
                 <p><label style="float: left;">Заголовок</label>
@@ -72,8 +80,9 @@
                 <p><label style="float: left">Описание</label>
                     <textarea id="add_content" rows="6" class="w3-input w3-border form-control" name="content"></textarea>
                 </p>
-                <input id="add_img" class="w3-button w3-white form-control" type="file" name="img" style="float: left;">
-                <input id="add_cat_two" class="w3-button w3-indigo" type="submit" value="button">
+                <input id="add_img" class="w3-button w3-white form-control" type="file" name="img_cattwo" style="float: left;">
+                <br><br>
+                <input id="add_cat_two" class="w3-button w3-indigo" type="submit" value="button" style="float:right;">
             </form>
         </div>
     </div>
@@ -83,7 +92,7 @@
     <div class="modal_content" data-modalka_id="#modal_edit">
             <span class="close_modal close-modal">
                 <i class="material-icons">close</i>
-            </span><br><br><br><br>
+            </span><br><br>
         <div class="content">
             <form id="forma_update" class="w3-container" action="javascript:void(0)" method="post" enctype="multipart/form-data">
                 <p><label style="float: left;">Заголовок</label>
@@ -92,10 +101,11 @@
                 <p><label style="float: left">Описание</label>
                     <textarea id="update_content" rows="6" class="w3-input w3-border form-control" name="content"></textarea>
                 </p>
-                <input id="update_id" class="form-control" type="text" name="id" ><br><br>
-                <input id="update_img" class="w3-button w3-white form-control" type="file" name="img" style="float: left;">
-                <input id="update_img_name" class="w3-button w3-white form-control" type="hidden" name="img_name" style="float: left;">
-                <input id="update_cat_two" class="w3-button w3-indigo" type="submit" value="button">
+                <input id="update_id" class="form-control" type="text" name="id" >
+                <input id="update_img" class="w3-button w3-white form-control" type="file" name="img_cattwo" style="float: left;">
+                <input id="update_img_name" type="hidden" name="img_name" style="float: left;">
+                <br><br>
+                <input id="update_cat_two" class="w3-button w3-indigo" type="submit" value="button" style="float:right;">
             </form>
         </div>
     </div>
@@ -158,9 +168,9 @@
                 contentType: false,
                 processData: false,
             }).done(function(){
-                console.log();
+                 window.location="/admin/catalogs_two";
                 $('#modal_edit').hide();
-                $('#forma_add').remove();
+                $("#forma_update")[0].reset();
             });
         });
 

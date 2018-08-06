@@ -38,8 +38,8 @@
 .modals .close_modal{
     width: 30px;
     height: auto;
-    /*float: right;*/
-    /*padding: 10px 10px;*/
+    float: right;
+    margin-right: 20px;
     
 }
 .modals .close_modal .material-icons {

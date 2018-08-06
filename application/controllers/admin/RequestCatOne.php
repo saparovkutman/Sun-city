@@ -23,12 +23,12 @@ class RequestCatOne extends CI_Controller
     public function update_cat_one()
     {
         $this->load->model('admin/RequestCatOneModels');
-        $this->RequestCatOneModels->insert_cat_one();
+        $this->RequestCatOneModels->update_cat_one();
     }
 
     public function delete_cat_one()
     {
         $this->load->model('admin/RequestCatOneModels');
-        $this->RequestCatOneModels->insert_cat_one();
+        $this->RequestCatOneModels->delete_cat_one();
     }
 }

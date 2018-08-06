@@ -24,24 +24,32 @@ class RequestCatThreeModels extends CI_Model
         $config['remove_spaces'] = TRUE;
 
         $this->upload->initialize($config);
-        $this->upload->do_upload('img');
-        $image_data = $this->upload->data();
+        
+        
+        if ( !$this->upload->do_upload('img_cattree'))
+        {
+            $file_name = "";
+        }
+        else
+        {
+            $image_data = $this->upload->data();
+            $config['image_library'] = 'gd2';
+            $config['source_image'] = $image_data['full_path'];
+            $config['new_image'] = APPPATH . '../assets/upload/thumb/cat_three';
+            $config['maintain_ratio'] = TRUE;
+            $config['width'] = 50;
+            $config['height'] = 50;
 
-        //thumb
-        $config['image_library'] = 'gd2';
-        $config['source_image'] = $image_data['full_path'];
-        $config['new_image'] = APPPATH . '../assets/upload/thumb/cat_three';
-        $config['maintain_ratio'] = TRUE;
-        $config['width'] = 50;
-        $config['height'] = 50;
+            $this->image_lib->initialize($config);
+            $this->image_lib->resize();
 
-        $this->image_lib->initialize($config);
-        $this->image_lib->resize();
+            //in DB
+            $name = $this->upload->data();
+            $file_name = $name['file_name'];
+            
 
-        //in DB
-        $name = $this->upload->data();
-        $img = $name['file_name'];
-        return $img;
+        }
+        return $file_name;
     }
 
 //========================= CATALOG THREE ==========================//
@@ -58,19 +66,21 @@ class RequestCatThreeModels extends CI_Model
     //update
     public function update_cat_three()
     {
-        $this->load->database();
         $title = $this->input->post('title', true);
         $content = $this->input->post('content', true);
         $id_cat = $this->input->post('id', true);
-//        $img = $this->image();
-        if (!$_FILES) {
+        $img_name = $this->input->post('img_name', true);
+        $img = $this->image();
+        if ($img == "") {
             $data = array('title' => $title, 'description' => $content, 'id' => $id_cat);
         } else {
-            $img = $this->image();
+            
             $data = array('title' => $title, 'description' => $content, 'image_name' => $img, 'id' => $id_cat);
-            $img_name = $this->input->post('img_name');
-            unlink('assets/upload/images/cat_three/' . $img_name);
-            unlink('assets/upload/thumb/cat_three/' . $img_name);
+            if($img_name){
+                unlink('assets/upload/images/cat_three/' . $img_name);
+                unlink('assets/upload/thumb/cat_three/' . $img_name);
+            }
+            
         }
         $this->db->where('id', $id_cat);
         $this->db->update('category_three', $data);
