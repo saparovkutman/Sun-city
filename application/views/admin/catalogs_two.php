@@ -158,7 +158,8 @@
                 contentType: false,
                 processData: false,
             }).done(function(){
-                console.log();
+                // console.log();
+                window.location="/admin/catalogs_two";
                 $('#modal_edit').hide();
                 $('#forma_add').remove();
             });

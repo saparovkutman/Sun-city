@@ -94,7 +94,7 @@
                 </p>
                 <input id="update_id" class="form-control" type="text" name="id" ><br><br>
                 <input id="update_img" class="w3-button w3-white form-control" type="file" name="img" style="float: left;">
-                <input id="update_img_name" class="w3-button w3-white form-control" type="hidden" name="img_name" style="float: left;">
+                <input id="update_img_name" class="w3-button w3-white form-control" type="text" name="img_name" style="float: left;">
                 <input id="update_cat_one" class="w3-button w3-indigo" type="submit" value="button">
             </form>
         </div>
@@ -158,7 +158,8 @@
                 contentType: false,
                 processData: false,
             }).done(function(){
-                console.log();
+                // console.log();
+                window.location="/admin/catalogs_one";
                 $('#modal_edit').hide();
                 $('#forma_add').remove();
             });
