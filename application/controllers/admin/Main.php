@@ -7,7 +7,9 @@ class Main extends CI_Controller {
 		parent::__construct();
 		$this->load->helper('url');
 		$this->load->helper('html');
+		$this->load->model('admin/MainModels');
 		$this->load->view('admin/header/header.php');
+
 	}
 
 //========================== INDEX ==========================//
@@ -77,7 +79,6 @@ class Main extends CI_Controller {
 	}
     //update
     public function edit_cat_three(){
-        $this->load->model('admin/MainModels');
         $result = $this->MainModels->get_id_three();
         $data = array(
             "data" => $result
@@ -133,9 +134,13 @@ class Main extends CI_Controller {
 	{
 		$this->load->view('catalogs');
 	}
-	public function podcatalogs()
+	public function podcatalogs($id)
 	{
-		$this->load->view('admin/podcatalogs');
+	    $result = $this->MainModels->get_services($id);
+	     $data = array(
+            "data" => $result
+        );
+		$this->load->view('admin/podcatalogs',$data);
 		$this->load->view('admin/footer/footer.php');
 	}
 }

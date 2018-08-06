@@ -39,12 +39,11 @@
                     $image=base_url()."assets/upload/no-image.jpg";
                 }
         ?>
-        
             <div class="col-lg-4 col-xlg-3 col-md-5">
                 <div class="card">
                     <div class="card-body">
                         <center class="m-t-30">
-                            <a href="/admin/podcatalogs<?php echo $category->id ?>">
+                            <a href="podcatalogs/<?php echo $category->id ?>">
                                 <img src="<?php echo $image ?>" style="width: 80%; height: 200px;" class="img-thumbnail">
                                 <h4 class="card-title m-t-10"><?php echo $category->title ?></h4>
                             </a><br>
@@ -168,19 +167,13 @@
                 contentType: false,
                 processData: false,
             }).done(function(){
-<<<<<<< HEAD
                  window.location="/admin/catalogs_two";
-=======
-                // console.log();
-                window.location="/admin/catalogs_two";
->>>>>>> 2e95f0c3178af647b7f60d150e526ed14945ba0a
                 $('#modal_edit').hide();
                 $("#forma_update")[0].reset();
             });
         });
 
         // DELETE
-
         $(".delete_cat").on('click', function(){
             var cat_id = $(this).data('id');
             var cat_img = $(this).data('img');
