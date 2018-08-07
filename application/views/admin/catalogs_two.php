@@ -47,8 +47,10 @@
                             <a href="/admin/podcatalogs<?php echo $category->id ?>">
                                 <img src="<?php echo $image ?>" style="width: 80%; height: 200px;" class="img-thumbnail">
                                 <h4 class="card-title m-t-10"><?php echo $category->title ?></h4>
-                            </a><br>
-                            <h6 class="card-subtitle"><?php echo $category->description ?></h6>
+                            </a>
+                            <div>
+                                <textarea style="width:85%;height:100px; border:none;"><?php echo $category->description ?></textarea>
+                            </div>
                             <button id="" type="button" class="btn btn-success open-modal edit_cat" data-modalka_id="#modal_edit" data-img="<?php echo $category->image_name ?>" data-id="<?php echo $category->id ?>" data-title="<?php echo $category->title ?>" data-description="<?php echo $category->description ?>" >Update</button>
                             <button type="button" class="btn btn-danger delete_cat" data-id="<?php echo $category->id?>" data-img="<?php echo $category->image_name?>">Delete</button>
                         </center>
@@ -89,8 +91,8 @@
 </div>
 <div class="modals" id="modal_edit">
     <div class="maska close-modal" data-modalka_id="#modal_edit"></div>
-    <div class="modal_content" data-modalka_id="#modal_edit">
-            <span class="close_modal close-modal">
+    <div class="modal_content">
+            <span class="close_modal close-modal" data-modalka_id="#modal_edit">
                 <i class="material-icons">close</i>
             </span><br><br>
         <div class="content">
@@ -168,12 +170,7 @@
                 contentType: false,
                 processData: false,
             }).done(function(){
-<<<<<<< HEAD
                  window.location="/admin/catalogs_two";
-=======
-                // console.log();
-                window.location="/admin/catalogs_two";
->>>>>>> 2e95f0c3178af647b7f60d150e526ed14945ba0a
                 $('#modal_edit').hide();
                 $("#forma_update")[0].reset();
             });

@@ -49,7 +49,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'welcome';
+$route['default_controller'] = 'main/index';
+
+$route['package'] = '/main/subcategory_one';
+
+$route['service'] = '/main/subcategory_two';
+$route['service/(:num)'] = '/main/subcategory_two_view/$1';
+$route['package/reserve'] = '/main/reserve_form_package_subcattwo';
+$route['restaurant/reserve'] = '/main/reserve_form_restaurant_subcattwo';
+$route['tichet/reserve'] = '/main/reserve_form_tichet_subcattwo';
+
+$route['vip_club'] = '/main/subcategory_three';
+$route['vip_club/reserve'] = '/main/reserve_form_subcattree';
+
+/*===============ADMIN ROUTES===================*/
 $route['admin'] = '/admin/main/index';
 $route['admin/reserve'] = '/admin/main/reserve';
 $route['admin/reserve_vip'] = '/admin/main/reserve_vip';

@@ -89,8 +89,8 @@
 </div>
 <div class="modals" id="modal_edit">
     <div class="maska close-modal" data-modalka_id="#modal_edit"></div>
-    <div class="modal_content" data-modalka_id="#modal_edit">
-            <span class="close_modal close-modal">
+    <div class="modal_content">
+            <span class="close_modal close-modal" data-modalka_id="#modal_edit">
                 <i class="material-icons">close</i>
             </span><br><br>
         <div class="content">
@@ -168,10 +168,6 @@
                 contentType: false,
                 processData: false,
             }).done(function(){
-<<<<<<< HEAD
-=======
-                // console.log();
->>>>>>> 2e95f0c3178af647b7f60d150e526ed14945ba0a
                 window.location="/admin/catalogs_three";
                 $('#modal_edit').hide();
                 $("#forma_update")[0].reset();
