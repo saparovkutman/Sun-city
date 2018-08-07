@@ -89,8 +89,8 @@
 </div>
 <div class="modals" id="modal_edit">
     <div class="maska close-modal" data-modalka_id="#modal_edit"></div>
-    <div class="modal_content" data-modalka_id="#modal_edit">
-            <span class="close_modal close-modal">
+    <div class="modal_content">
+            <span class="close_modal close-modal" data-modalka_id="#modal_edit">
                 <i class="material-icons">close</i>
             </span><br><br>
         <div class="content">
