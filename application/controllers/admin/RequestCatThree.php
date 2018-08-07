@@ -31,4 +31,23 @@ class RequestCatThree extends CI_Controller
         $this->load->model('admin/RequestCatThreeModels');
         $this->RequestCatThreeModels->delete_cat_three();
     }
+
+    //======================= SUBCATALOG THREE ==========================//
+    public function insert_subcat_three()
+    {
+        $this->load->model('admin/RequestCatThreeModels');
+        $this->RequestCatThreeModels->insert_subcat_three();
+    }
+
+    public function update_subcat_three()
+    {
+        $this->load->model('admin/RequestCatThreeModels');
+        $this->RequestCatThreeModels->update_subcat_three();
+    }
+
+    public function delete_subcat_three()
+    {
+        $this->load->model('admin/RequestCatThreeModels');
+        $this->RequestCatThreeModels->delete_subcat_three();
+    }
 }

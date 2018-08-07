@@ -64,6 +64,8 @@ $route['admin/catalogs_three'] = '/admin/main/catalogs_three';
 $route['admin/podcatalogs'] = '/admin/main/podcatalogs';
 
 
+
+
 $route['admin/users'] = '/admin/main/users';
 $route['admin/profile'] = '/admin/main/profile';
 
@@ -81,6 +83,8 @@ $route['admin/update_two/(:any)'] = 'models/requestCatTwoModels/$1';
 $route['admin/request_three'] = 'admin/catalogs_three';
 $route['admin/insert_three'] = 'models/requestCatThreeModels';
 $route['admin/update_three/(:any)'] = 'models/requestCatThreeModels/$1';
+//subcategories three
+$route['admin/podcatalog_three/(:num)'] = '/admin/main/podcatalog_three/$1';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

@@ -44,8 +44,6 @@ class RequestCatOneModels extends CI_Model
             $this->image_lib->resize();
             $name = $this->upload->data();
             $file_name = $name['file_name'];
-            
-
         }
         return $file_name;
     }
@@ -57,7 +55,11 @@ class RequestCatOneModels extends CI_Model
         $title = $this->input->post('title', true);
         $description = $this->input->post('content', true);
         $img = $this->image();
-        $data = array("title" => $title, "description" => $description, "image_name" => $img);
+        $data = array(
+            "title" => $title,
+            "description" => $description,
+            "image_name" => $img
+        );
         $this->db->insert('category_one', $data);
     }
 
@@ -67,13 +69,24 @@ class RequestCatOneModels extends CI_Model
         $this->load->database();
         $title = $this->input->post('title', true);
         $content = $this->input->post('content', true);
+        $img_name = $this->input->post('img_name');
         $id_cat = $this->input->post('id', true);
         $img = $this->image();
         if ($img == "") {
-            $data = array('title' => $title, 'description' => $content, 'id' => $id_cat);
-        } else {
-            $data = array('title' => $title, 'description' => $content, 'image_name' => $img, 'id' => $id_cat);
-            $img_name = $this->input->post('img_name');
+            $data = array(
+                'title' => $title,
+                'description' => $content,
+                'id' => $id_cat
+            );
+        }
+        else {
+            $data = array(
+                'title' => $title,
+                'description' => $content,
+                'image_name' => $img,
+                'id' => $id_cat
+            );
+
             if($img_name){
                 unlink('assets/upload/images/cat_one/' . $img_name);
                 unlink('assets/upload/thumb/cat_one/' . $img_name);

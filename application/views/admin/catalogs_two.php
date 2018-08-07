@@ -11,7 +11,7 @@
         <!-- ============================================================== -->
         <div class="row page-titles">
             <div class="col-md-5 align-self-center">
-                <h4 class="text-themecolor">Blank Page</h4>
+                <h4 class="text-themecolor">Category 2</h4>
             </div>
             <div class="col-md-7 align-self-center text-right">
                 <div class="d-flex justify-content-end align-items-center">
@@ -168,12 +168,7 @@
                 contentType: false,
                 processData: false,
             }).done(function(){
-<<<<<<< HEAD
                  window.location="/admin/catalogs_two";
-=======
-                // console.log();
-                window.location="/admin/catalogs_two";
->>>>>>> 2e95f0c3178af647b7f60d150e526ed14945ba0a
                 $('#modal_edit').hide();
                 $("#forma_update")[0].reset();
             });
