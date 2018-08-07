@@ -18,6 +18,7 @@ class Main extends CI_Controller {
 		$this->load->view('admin/index');
 		$this->load->view('admin/footer/footer.php');
 		}
+
 //========================= CATALOG ONE ==========================//
     //insert
 	public function catalogs_one()
@@ -30,6 +31,7 @@ class Main extends CI_Controller {
 		$this->load->view('admin/catalogs_one', $data);
 		$this->load->view('admin/footer/footer.php');
 	}
+<<<<<<< HEAD
     
     
     //update
@@ -41,30 +43,21 @@ class Main extends CI_Controller {
         );
         $this->load->view('admin/catalogs_one',$data);
         $this->load->view('admin/footer/footer.php');
+=======
+>>>>>>> 1d745d4806d82fa4844f10836599705bd4ff7a84
 
-    }
+
 //========================= CATALOG TWO ==========================//
     //insert
 	public function catalogs_two()
-	{
+    {
         $this->load->model('admin/MainModels');
         $result = $this->MainModels->get_cat_two();
         $data = array(
             "data" => $result
         );
-		$this->load->view('admin/catalogs_two',$data);
-		$this->load->view('admin/footer/footer.php');
-	}
-	//update
-    public function edit_cat_two(){
-        $this->load->model('admin/MainModels');
-        $result = $this->MainModels->get_id_two();
-        $data = array(
-            "data" => $result
-        );
-        $this->load->view('admin/catalogs_two',$data);
+        $this->load->view('admin/catalogs_two', $data);
         $this->load->view('admin/footer/footer.php');
-
     }
 
 //========================= CATALOG THREE ==========================//
@@ -79,15 +72,25 @@ class Main extends CI_Controller {
 		$this->load->view('admin/catalogs_three', $data);
 		$this->load->view('admin/footer/footer.php');
 	}
+<<<<<<< HEAD
+
+
+//========================= SUBCATALOGS THREE ==========================//
+    public function podcatalog_three($id)
+    {
+        $this->load->model('admin/mainmodels');
+        $result = $this->mainmodels->get_podcatalog_three($id);
+=======
     //update
     public function edit_cat_three(){
         $result = $this->MainModels->get_id_three();
+>>>>>>> b15d6bcd47d4cf3e6af8568bd9be75dcac9ef252
         $data = array(
-            "data" => $result
+            "data" => $result,
+            'cat_id'=>$id
         );
-        $this->load->view('admin/catalogs_three',$data);
+        $this->load->view('admin/podcatalog_three', $data);
         $this->load->view('admin/footer/footer.php');
-
     }
 
 //========================= RESERVE ==========================//

@@ -176,7 +176,11 @@
                 contentType: false,
                 processData: false,
             }).done(function(){
+<<<<<<< HEAD
+                window.location="/admin/catalogs_one"
+=======
                 window.location="/admin/catalogs_one";
+>>>>>>> b15d6bcd47d4cf3e6af8568bd9be75dcac9ef252
                 $('#modal_edit').hide();
                 $("#forma_update")[0].reset();
             });
