@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0
+-- version 4.7.7
 -- https://www.phpmyadmin.net/
 --
--- Хост: 127.0.0.1
--- Время создания: Авг 06 2018 г., 15:36
--- Версия сервера: 10.1.31-MariaDB
--- Версия PHP: 7.0.29
+-- Хост: 127.0.0.1:3306
+-- Время создания: Авг 07 2018 г., 17:38
+-- Версия сервера: 5.7.20
+-- Версия PHP: 5.6.32
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -34,6 +34,13 @@ CREATE TABLE `category_one` (
   `description` text NOT NULL,
   `image_name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `category_one`
+--
+
+INSERT INTO `category_one` (`id`, `title`, `description`, `image_name`) VALUES
+(8, 'Jacky Cheung A Classic Tour - 2018 Macao', 'Suncity Group Presents 《Jacky Cheung A Classic Tour - 2018 Macao》. Joining hands with affiliates Sun Entertainment Culture and Sun Travel, Suncity Group《Jacky Cheung A Classic Tour-2018 Macao》Accommodation Package, out now!', '636b2c64dbf86da3bb7af704452e23a0.jpg');
 
 -- --------------------------------------------------------
 
@@ -123,6 +130,33 @@ CREATE TABLE `services_transports` (
 -- --------------------------------------------------------
 
 --
+-- Структура таблицы `sub_category_one_info`
+--
+
+CREATE TABLE `sub_category_one_info` (
+  `id` int(11) NOT NULL,
+  `price` varchar(222) NOT NULL,
+  `type_package` varchar(255) NOT NULL,
+  `package_includes_one` text NOT NULL,
+  `package_includes_two` text NOT NULL,
+  `package_includes_three` text NOT NULL,
+  `book_now_text` text NOT NULL,
+  `ticket_text` text NOT NULL,
+  `ticket_type` text NOT NULL,
+  `category_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `sub_category_one_info`
+--
+
+INSERT INTO `sub_category_one_info` (`id`, `price`, `type_package`, `package_includes_one`, `package_includes_two`, `package_includes_three`, `book_now_text`, `ticket_text`, `ticket_type`, `category_id`) VALUES
+(6, 'LLLLLL LLLLLLL', 'LLLLL LLLLL', 'LLLLLLL LLLLLLL', 'LLLLLL LLLLLLL', 'LLLLLLL LLLLLLL', 'LLLLLL LLLLLLLLL', 'LLLLLL LLLLLLLLLL', 'LLLLLL LLLLL', 8),
+(7, 'jjjjjjjjjjjjjjjjjjjjjjjj', 'JJHjjjjjjjjjjj', 'JJJJJJJJJJJ', 'JJJJJJJJJJJJJJJJ', 'JJJJJJJJJJJJJJJJ', 'JJJJJJJJJJJJJ', 'JJJJJJJJJJ', 'KKK', 8);
+
+-- --------------------------------------------------------
+
+--
 -- Структура таблицы `sub_category_two`
 --
 
@@ -181,6 +215,12 @@ ALTER TABLE `services_transports`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Индексы таблицы `sub_category_one_info`
+--
+ALTER TABLE `sub_category_one_info`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Индексы таблицы `sub_category_two`
 --
 ALTER TABLE `sub_category_two`
@@ -194,7 +234,7 @@ ALTER TABLE `sub_category_two`
 -- AUTO_INCREMENT для таблицы `category_one`
 --
 ALTER TABLE `category_one`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT для таблицы `category_three`
@@ -231,6 +271,12 @@ ALTER TABLE `services_tickets_show`
 --
 ALTER TABLE `services_transports`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT для таблицы `sub_category_one_info`
+--
+ALTER TABLE `sub_category_one_info`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT для таблицы `sub_category_two`

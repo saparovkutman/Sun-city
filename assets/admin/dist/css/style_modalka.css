@@ -22,8 +22,8 @@
 .modals .modal_content{
     position: fixed;
     width: 60%;
-    height: 75vh;
-    top: 70px;
+    height: 90vh;
+    top: 50px;
     left: 20%;
     border: 1px solid black;
     background: #fff;
@@ -32,7 +32,7 @@
 }
 .modals .content{
     width: 100%;
-    height: 65vh;
+    height: 80vh;
     overflow: auto;
 }
 .modals .close_modal{

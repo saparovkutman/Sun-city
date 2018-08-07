@@ -30,6 +30,8 @@ class Main extends CI_Controller {
 		$this->load->view('admin/catalogs_one', $data);
 		$this->load->view('admin/footer/footer.php');
 	}
+    
+    
     //update
     public function edit_cat_one(){
         $this->load->model('admin/MainModels');
