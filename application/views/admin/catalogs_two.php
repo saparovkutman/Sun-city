@@ -39,12 +39,11 @@
                     $image=base_url()."assets/upload/no-image.jpg";
                 }
         ?>
-        
             <div class="col-lg-4 col-xlg-3 col-md-5">
                 <div class="card">
                     <div class="card-body">
                         <center class="m-t-30">
-                            <a href="/admin/podcatalogs<?php echo $category->id ?>">
+                            <a href="podcatalogs/<?php echo $category->id ?>">
                                 <img src="<?php echo $image ?>" style="width: 80%; height: 200px;" class="img-thumbnail">
                                 <h4 class="card-title m-t-10"><?php echo $category->title ?></h4>
                             </a>
@@ -177,7 +176,6 @@
         });
 
         // DELETE
-
         $(".delete_cat").on('click', function(){
             var cat_id = $(this).data('id');
             var cat_img = $(this).data('img');
