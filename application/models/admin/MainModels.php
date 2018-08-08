@@ -18,7 +18,6 @@ class MainModels extends CI_Model{
 //========================= CATALOG TWO ==========================//
     public function get_cat_two()
     {
-        
              $select = $this->db->get('category_two');
              $cat_two = $select->result();
              return $cat_two;
@@ -33,11 +32,9 @@ class MainModels extends CI_Model{
     }
 
 // get services
-public function get_services($id){
-          $this->db->where('category_id',$id);
+public function get_services(){
           $select = $this->db->get('sub_category_two');
-          $cat_three = $select->result();
-          return $cat_three;
+          return $select->result();
 }
 
 

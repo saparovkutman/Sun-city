@@ -43,7 +43,7 @@
                 <div class="card">
                     <div class="card-body">
                         <center class="m-t-30">
-                            <a href="podcatalogs/<?php echo $category->id ?>">
+                            <a href="podcatalog_two/uslugi">
                                 <img src="<?php echo $image ?>" style="width: 80%; height: 200px;" class="img-thumbnail">
                                 <h4 class="card-title m-t-10"><?php echo $category->title ?></h4>
                             </a><br>
