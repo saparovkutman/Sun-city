@@ -90,9 +90,9 @@
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
-                        <li><a class="waves-effect waves-dark" href="/admin/reserve" aria-expanded="false"><i class="fa fa-shield"></i><span class="hide-menu">Бронирование</span></a></li>
-                        <li> <a class="waves-effect waves-dark" href="/admin/profile" aria-expanded="false"><i class="fa fa-user-circle-o"></i><span class="hide-menu">Profile</span></a></li>
-                        <li> <a class="waves-effect waves-dark" href="/admin/users" aria-expanded="false"><i class="fa fa-table"></i><span class="hide-menu"></span>Пользователи</a></li>
+                        <li><a class="waves-effect waves-dark" href="<?=base_url()?>admin/reserve" aria-expanded="false"><i class="fa fa-shield"></i><span class="hide-menu">Бронирование</span></a></li>
+                        <li> <a class="waves-effect waves-dark" href="<?=base_url()?>admin/profile" aria-expanded="false"><i class="fa fa-user-circle-o"></i><span class="hide-menu">Profile</span></a></li>
+                        <li> <a class="waves-effect waves-dark" href="<?=base_url()?>admin/users" aria-expanded="false"><i class="fa fa-table"></i><span class="hide-menu"></span>Пользователи</a></li>
                         <li> <a class="waves-effect waves-dark" href="icon-fontawesome.html" aria-expanded="false"><i class="fa fa-smile-o"></i><span class="hide-menu"></span>Icon</a></li>
                         <li> <a class="waves-effect waves-dark" href="map-google.html" aria-expanded="false"><i class="fa fa-globe"></i><span class="hide-menu"></span>Map</a></li>
                         <li> <a class="waves-effect waves-dark" href="/admin" aria-expanded="false"><i class="fa fa-bookmark-o"></i><span class="hide-menu"></span>Каталоги</a></li>                       

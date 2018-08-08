@@ -31,23 +31,23 @@
                 <div class="row">
 
 
-                 <?php foreach ($data as $row):
-        
-        ?>                              
-                     <div class="col-lg-4 col-xlg-3 col-md-5">
+                 <?php foreach ($data as $row): ?>
+                            <div class="col-lg-4 col-xlg-3 col-md-5">
                         <div class="card">
                             <div class="card-body">
                                 <center class="m-t-30"><img src="<?php echo base_url() ?>assets/admin/assets/images/users/1.jpg" width="300" class="img-thumbnail" />
                                     <h4 class="card-title m-t-10"><?=$row->title?></h4>
-                                    <h6 class="card-subtitle"><?=$row->descrition?></h6>                            
+                                    <h6 class="card-subtitle"><?=$row->description?></h6>                            
                                     <button type="button" class="btn btn-success">Update</button>
                                     <button type="button" class="btn btn-danger">Delete</button>      
                                 </center>
                             </div>
                         </div>
                     </div>
+                 <?php endforeach ?>
+              
                    
-            <?php endforeach;?>
+        
                 </div>
 
                 <!-- ============================================================== -->
@@ -71,7 +71,7 @@
             <i class="material-icons">close</i>
         </span><br><br>
         <div class="content">
-            <form id="forma_add" class="w3-container"  action="javascript:void(0)" method="post" enctype="multipart/form-data">
+            <form id="forma_add_uslugi" class="w3-container"  action="javascript:void(0)" method="post" enctype="multipart/form-data">
                 <p><label style="float: left;">Заголовок</label>
                     <input id="add_title" class="w3-input w3-border form-control" name="title" type="text">
                 </p>
@@ -80,7 +80,7 @@
                 </p>
                 <input id="add_img" class="w3-button w3-white form-control" type="file" name="img_cattwo" style="float: left;">
                 <br><br>
-                <input id="add_cat_two" class="w3-button w3-indigo" type="submit" value="button" style="float:right;">
+                <input id="add_uslugi" class="w3-button w3-indigo" type="submit" value="button" style="float:right;">
             </form>
         </div>
     </div>
@@ -99,6 +99,23 @@
             var modal_id = $(this).data('modalka_id');
             $(modal_id).hide();
         });
+
+
+        $('#add_uslugi').on('click',function(){
+            var form_add= $("#forma_add_uslugi")[0];
+            var vse_polya_add= new FormData(form_add);
+            $.ajax({
+                method: "POST",
+                url: "requestCatTwo/insert_uslugi",
+                data: vse_polya_add,
+                contentType: false,
+                processData: false,
+            }).done(function(){
+                $('#modal_add').hide();
+                $("#forma_add")[0].reset();
+            });
+        });
+
 
     });
 </script>

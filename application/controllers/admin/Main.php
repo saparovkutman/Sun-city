@@ -31,6 +31,20 @@ class Main extends CI_Controller {
 		$this->load->view('admin/catalogs_one', $data);
 		$this->load->view('admin/footer/footer.php');
 	}
+<<<<<<< HEAD
+    
+    
+    //update
+    public function edit_cat_one(){
+        $this->load->model('admin/MainModels');
+        $result = $this->MainModels->get_id_one();
+        $data = array(
+            "data" => $result
+        );
+        $this->load->view('admin/catalogs_one',$data);
+        $this->load->view('admin/footer/footer.php');
+=======
+>>>>>>> 1d745d4806d82fa4844f10836599705bd4ff7a84
 
 
 //========================= CATALOG TWO ==========================//
@@ -45,6 +59,7 @@ class Main extends CI_Controller {
         $this->load->view('admin/catalogs_two', $data);
         $this->load->view('admin/footer/footer.php');
     }
+    
 
 //========================= CATALOG THREE ==========================//
     //insert
@@ -180,13 +195,14 @@ class Main extends CI_Controller {
 	{
 		$this->load->view('catalogs');
 	}
-	public function podcatalogs($id)
-	{
-	    $result = $this->MainModels->get_services($id);
-	     $data = array(
-            "data" => $result
-        );
-		$this->load->view('admin/podcatalogs',$data);
-		$this->load->view('admin/footer/footer.php');
-	}
+	// // для каталог 2 . тут услуги
+	// public function podcatalogs($id)
+	// {
+	//     $result = $this->MainModels->get_services();
+	//      $data = array(
+ //            "data" => $result
+ //        );
+	// 	$this->load->view('admin/podcatalogs_two',$data);
+	// 	$this->load->view('admin/footer/footer.php');
+	// }
 }
