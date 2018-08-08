@@ -43,11 +43,13 @@
                 <div class="card">
                     <div class="card-body">
                         <center class="m-t-30">
-                            <a href="/admin/podcatalogs<?php echo $category->id ?>">
+                            <a href="/admin/subcategory/<?php echo $category->id ?>">
                                 <img src="<?php echo $image ?>" style="width: 80%; height: 200px;" class="img-thumbnail">
                                 <h4 class="card-title m-t-10"><?php echo $category->title ?></h4>
-                            </a><br>
-                            <h6 class="card-subtitle"><?php echo $category->description ?></h6>
+                            </a>
+                            <div>
+                                <textarea style="width:85%;height:100px; border:none;"><?php echo $category->description ?></textarea>
+                            </div>
                             <button id="" type="button" class="btn btn-success open-modal edit_cat" data-modalka_id="#modal_edit" data-img="<?php echo $category->image_name ?>" data-id="<?php echo $category->id ?>" data-title="<?php echo $category->title ?>" data-description="<?php echo $category->description ?>" >Update</button>
                             <button type="button" class="btn btn-danger delete_cat" data-id="<?php echo $category->id?>" data-img="<?php echo $category->image_name?>">Delete</button>
                         </center>
@@ -64,7 +66,7 @@
 <!-- ============================================================== -->
 <!-- End Container fluid  -->
 <!-- ============================================================== -->
-</div>
+
 <div class="modals" id="modal_add">
     <div class="maska close-modal" data-modalka_id="#modal_add"></div>
     <div class="modal_content">
@@ -90,8 +92,8 @@
 </div>
 <div class="modals" id="modal_edit">
     <div class="maska close-modal" data-modalka_id="#modal_edit"></div>
-    <div class="modal_content" data-modalka_id="#modal_edit">
-            <span class="close_modal close-modal">
+    <div class="modal_content">
+            <span class="close_modal close-modal" data-modalka_id="#modal_edit">
                 <i class="material-icons">close</i>
             </span>
         <br>
@@ -104,7 +106,7 @@
                 <p><label style="float: left">Описание</label>
                     <textarea id="update_content" rows="6" class="w3-input w3-border form-control" name="content"></textarea>
                 </p>
-<<<<<<< HEAD
+
                 <input id="update_id" class="form-control" type="hidden" name="id" >
                 <input id="update_img" type="file" name="img_catone" style="float: left;">
                 <input id="update_img_name" type="hidden" name="img_name" style="float: left;">
@@ -112,12 +114,6 @@
                 <br>
                 <br>
                 <input id="update_cat_one" class="w3-button w3-indigo" type="submit" value="button" style="float:right;">
-=======
-                <input id="update_id" class="form-control" type="text" name="id" ><br><br>
-                <input id="update_img" class="w3-button w3-white form-control" type="file" name="img" style="float: left;">
-                <input id="update_img_name" class="w3-button w3-white form-control" type="text" name="img_name" style="float: left;">
-                <input id="update_cat_one" class="w3-button w3-indigo" type="submit" value="button">
->>>>>>> 2e95f0c3178af647b7f60d150e526ed14945ba0a
             </form>
         </div>
     </div>
@@ -183,9 +179,8 @@
 <<<<<<< HEAD
                 window.location="/admin/catalogs_one"
 =======
-                // console.log();
                 window.location="/admin/catalogs_one";
->>>>>>> 2e95f0c3178af647b7f60d150e526ed14945ba0a
+>>>>>>> b15d6bcd47d4cf3e6af8568bd9be75dcac9ef252
                 $('#modal_edit').hide();
                 $("#forma_update")[0].reset();
             });

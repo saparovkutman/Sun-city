@@ -30,6 +30,14 @@ class MainModels extends CI_Model{
         $cat_three = $select->result();
         return $cat_three;
     }
+//========================= SUBCATALOG THREE ==========================//
+    // get podcatalog
+    public function get_podcatalog_three($id){
+        $this->db->where('cat_three_id',$id);
+        $select = $this->db->get('sub_category_three');
+        $sub_cat_three = $select->result();
+        return $sub_cat_three;
+    }
 
 // get services
 public function get_services(){

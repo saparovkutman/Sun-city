@@ -49,7 +49,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'welcome';
+$route['default_controller'] = 'main/index';
+/*===============MAIN ROUTES===================*/
+$route['package'] = '/main/subcategory_one';
+
+$route['service'] = '/main/subcategory_two';
+$route['service/(:num)'] = '/main/subcategory_two_view/$1';
+$route['package/reserve'] = '/main/reserve_form_package_subcattwo';
+$route['restaurant/reserve'] = '/main/reserve_form_restaurant_subcattwo';
+$route['tichet/reserve'] = '/main/reserve_form_tichet_subcattwo';
+
+$route['vip_club'] = '/main/subcategory_three';
+$route['vip_club/reserve'] = '/main/reserve_form_subcattree';
+
+/*===============ADMIN ROUTES===================*/
 $route['admin'] = '/admin/main/index';
 $route['admin/reserve'] = '/admin/main/reserve';
 $route['admin/reserve_vip'] = '/admin/main/reserve_vip';
@@ -63,8 +76,19 @@ $route['admin/catalogs_two'] = '/admin/main/catalogs_two';
 $route['admin/catalogs_three'] = '/admin/main/catalogs_three';
 $route['admin/podcatalogs/(:num)'] = '/admin/main/podcatalogs/$1';
 
+<<<<<<< HEAD
+/*===============Sub category one ROUTES===================*/
+$route['admin/subcategory/(:num)'] = '/admin/RequestSubCatOne/show_sub_catalogs_one/$1';
+$route['admin/subcategory_insert'] = '/admin/RequestSubCatOne/insert_sub_cat_one';
+$route['admin/subcategory_update'] = '/admin/RequestSubCatOne/update_sub_cat_one';
+$route['admin/subcategory_delete'] = '/admin/RequestSubCatOne/delete_sub_cat_one';
+/*===============End Sub category one ROUTES===================*/
+=======
+
+
 
 $route['admin/users'] = '/admin/main/users';
+>>>>>>> 1d745d4806d82fa4844f10836599705bd4ff7a84
 $route['admin/profile'] = '/admin/main/profile';
 
 //category_one
@@ -81,6 +105,8 @@ $route['admin/update_two/(:any)'] = 'models/requestCatTwoModels/$1';
 $route['admin/request_three'] = 'admin/catalogs_three';
 $route['admin/insert_three'] = 'models/requestCatThreeModels';
 $route['admin/update_three/(:any)'] = 'models/requestCatThreeModels/$1';
+//subcategories three
+$route['admin/podcatalog_three/(:num)'] = '/admin/main/podcatalog_three/$1';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

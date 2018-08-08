@@ -43,7 +43,7 @@
                 <div class="card">
                     <div class="card-body">
                         <center class="m-t-30">
-                            <a href="/admin/podcatalogs<?php echo $category->id ?>">
+                            <a href="/admin/podcatalog_three/<?php echo $category->id ?>">
                                 <img src="<?php echo $image ?>" style="width: 80%; height: 200px;" class="img-thumbnail">
                                 <h4 class="card-title m-t-10"><?php echo $category->title ?></h4>
                             </a><br>
@@ -89,8 +89,8 @@
 </div>
 <div class="modals" id="modal_edit">
     <div class="maska close-modal" data-modalka_id="#modal_edit"></div>
-    <div class="modal_content" data-modalka_id="#modal_edit">
-            <span class="close_modal close-modal">
+    <div class="modal_content">
+            <span class="close_modal close-modal" data-modalka_id="#modal_edit">
                 <i class="material-icons">close</i>
             </span><br><br>
         <div class="content">
@@ -168,10 +168,6 @@
                 contentType: false,
                 processData: false,
             }).done(function(){
-<<<<<<< HEAD
-=======
-                // console.log();
->>>>>>> 2e95f0c3178af647b7f60d150e526ed14945ba0a
                 window.location="/admin/catalogs_three";
                 $('#modal_edit').hide();
                 $("#forma_update")[0].reset();
