@@ -35,7 +35,7 @@ class RequestCatThreeModels extends CI_Model
             $image_data = $this->upload->data();
             $config['image_library'] = 'gd2';
             $config['source_image'] = $image_data['full_path'];
-            $config['new_image'] = APPPATH . './assets/upload/thumb/cat_three';
+            $config['new_image'] = APPPATH . '../assets/upload/thumb/cat_three';
             $config['maintain_ratio'] = TRUE;
             $config['width'] = 50;
             $config['height'] = 50;

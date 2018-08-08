@@ -19,10 +19,11 @@ class MainModels extends CI_Model{
     public function get_cat_two()
     {
         
-             $select = $this->db->get('category_two');
-             $cat_two = $select->result();
-             return $cat_two;
+        $select = $this->db->get('category_two');
+        $cat_two = $select->result();
+        return $cat_two;
     }
+   
 
 //========================= CATALOG THREE ==========================//
     public function get_cat_three()
@@ -41,15 +42,21 @@ class MainModels extends CI_Model{
     }
 
 // get services
-public function get_services($id){
+    public function get_services($id){
           $this->db->where('category_id',$id);
           $select = $this->db->get('sub_category_two');
           $cat_three = $select->result();
           return $cat_three;
-}
+    }
 
 
-
+    public function profile($user_id)
+    {   
+        $this->db->where('id',  $user_id);
+        $select = $this->db->get('users_admin');
+        $user = $select->result();
+        return $user;
+    }
 
 
 

@@ -9,7 +9,10 @@ class Main extends CI_Controller {
 		$this->load->helper('html');
 		$this->load->model('admin/MainModels');
 		$this->load->view('admin/header/header.php');
-
+        $this->load->library('authit');
+		$this->load->helper('authit');
+		$this->config->load('authit');
+        if (!logged_in()) redirect('admin/login');
 	}
 
 //========================== INDEX ==========================//
@@ -31,21 +34,6 @@ class Main extends CI_Controller {
 		$this->load->view('admin/catalogs_one', $data);
 		$this->load->view('admin/footer/footer.php');
 	}
-<<<<<<< HEAD
-    
-    
-    //update
-    public function edit_cat_one(){
-        $this->load->model('admin/MainModels');
-        $result = $this->MainModels->get_id_one();
-        $data = array(
-            "data" => $result
-        );
-        $this->load->view('admin/catalogs_one',$data);
-        $this->load->view('admin/footer/footer.php');
-=======
->>>>>>> 1d745d4806d82fa4844f10836599705bd4ff7a84
-
 
 //========================= CATALOG TWO ==========================//
     //insert
@@ -72,7 +60,6 @@ class Main extends CI_Controller {
 		$this->load->view('admin/catalogs_three', $data);
 		$this->load->view('admin/footer/footer.php');
 	}
-<<<<<<< HEAD
 
 
 //========================= SUBCATALOGS THREE ==========================//
@@ -80,11 +67,7 @@ class Main extends CI_Controller {
     {
         $this->load->model('admin/mainmodels');
         $result = $this->mainmodels->get_podcatalog_three($id);
-=======
-    //update
-    public function edit_cat_three(){
-        $result = $this->MainModels->get_id_three();
->>>>>>> b15d6bcd47d4cf3e6af8568bd9be75dcac9ef252
+
         $data = array(
             "data" => $result,
             'cat_id'=>$id
@@ -131,7 +114,13 @@ class Main extends CI_Controller {
 	}
 	public function profile()
 	{
-		$this->load->view('admin/profile');
+//        
+        $user_id = user('id');
+        $result = $this->MainModels->profile($user_id);
+        $data = array(
+            "data" => $result
+        );
+		$this->load->view('admin/profile', $data);
 		$this->load->view('admin/footer/footer.php');
 	}
 

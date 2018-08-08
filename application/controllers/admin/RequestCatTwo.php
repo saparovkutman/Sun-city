@@ -9,6 +9,10 @@ class RequestCatTwo extends CI_Controller {
         $this->load->helper(array('form', 'url'));
         $this->load->library('image_lib');
         $this->load->library('upload');
+        $this->load->library('authit');
+		$this->load->helper('authit');
+		$this->config->load('authit');
+        if (!logged_in()) redirect('admin/login');
     }
 
 

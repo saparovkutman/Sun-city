@@ -9,6 +9,10 @@ class RequestSubCatOne extends CI_Controller {
 		$this->load->helper('html');
 		$this->load->model('admin/MainModels');
 		$this->load->view('admin/header/header.php');
+        $this->load->library('authit');
+		$this->load->helper('authit');
+		$this->config->load('authit');
+        if (!logged_in()) redirect('admin/login');
 
 	}
     public function show_sub_catalogs_one($id)
