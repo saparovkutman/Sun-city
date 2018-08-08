@@ -35,7 +35,7 @@ class RequestCatThreeModels extends CI_Model
             $image_data = $this->upload->data();
             $config['image_library'] = 'gd2';
             $config['source_image'] = $image_data['full_path'];
-            $config['new_image'] = APPPATH . './assets/upload/thumb/cat_three';
+            $config['new_image'] = APPPATH . '../assets/upload/thumb/cat_three';
             $config['maintain_ratio'] = TRUE;
             $config['width'] = 50;
             $config['height'] = 50;
@@ -143,7 +143,6 @@ class RequestCatThreeModels extends CI_Model
         $img_name = $this->input->post('img_name', true);
         $img = $this->image();
 
-
         if ($img == "") {
             $data = array(
                 'id' => $id_cat,
@@ -177,10 +176,13 @@ class RequestCatThreeModels extends CI_Model
     public function delete_subcat_three()
     {
         $id_cat_three = $this->input->post('id', true);
-        $cat_img = $this->input->post('img_name', true);
+        $cat_img = $this->input->post('img', true);
+
         unlink('assets/upload/images/cat_three/' . $cat_img);
         unlink('assets/upload/thumb/cat_three/' . $cat_img);
+        print_r($cat_img);print_r($id_cat_three);
+
         $this->db->where('id', $id_cat_three);
-        $this->db->delete('category_three');
+        $this->db->delete('sub_category_three');
     }
 }

@@ -99,6 +99,10 @@ $route['admin/update_three/(:any)'] = 'models/requestCatThreeModels/$1';
 //subcategories three
 $route['admin/podcatalog_three/(:num)'] = '/admin/main/podcatalog_three/$1';
 
+//accommodation_package
+$route['admin/accommodation'] = 'admin/main/accommodation';
+
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 

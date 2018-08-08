@@ -50,7 +50,9 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <?php foreach ($data as $category):
+                                <?php
+                                $i=1;
+                                foreach ($data as $category):
                                     if($category->image_name){
                                         $image=base_url()."assets/upload/images/cat_three/".$category->image_name;
                                     }
@@ -59,7 +61,7 @@
                                     }
                                     ?>
                                 <tr>
-                                    <td><?php echo $category->id ?></td>
+                                    <td><?php echo $i ?></td>
                                     <td><?php echo $category->title ?></td>
                                     <td><?php echo $category->description ?></td>
                                     <td><?php echo $category->total_rooms ?></td>
@@ -67,9 +69,11 @@
                                     <td><?php echo $category->idle ?></td>
                                     <td><img src="<?php echo $image ?>" style="width: 100px; height: 100px;" class="img-thumbnail"></td>
                                     <td> <button id="" type="button" class="btn btn-success open-modal edit_cat" data-modalka_id="#modal_edit" data-img="<?php echo $category->image_name ?>" data-id="<?php echo $category->id ?>" data-title="<?php echo $category->title ?>" data-description="<?php echo $category->description ?>" data-total_rooms="<?php echo $category->total_rooms ?>" data-occupied="<?php echo $category->occupied ?>" data-idle="<?php echo $category->idle ?>">Update</button>
-                                        <button type="button" class="btn btn-danger delete_cat" data-id="<?php echo $category->id?>" data-img="<?php echo $category->image_name?>">Delete</button></td>
+                                        <button type="button" class="btn btn-danger delete_cat" data-id="<?php echo $category->id?>" data-img="<?php echo $category->image_name?>">Delete</button>
                                 </tr>
-                                <?php endforeach;?>
+                                <?php
+                                $i++;
+                                endforeach;?>
                                 </tbody>
                             </table>
                         </div>
@@ -213,19 +217,18 @@
             var vse_polya_add= new FormData(form_edit);
             $.ajax({
                 method: "POST",
-                url: "/admin/requestCatThree/update_subcat_three/<?php echo $cat_id ?>\"",
+                url: "/admin/requestCatThree/update_subcat_three",
                 data: vse_polya_add,
                 contentType: false,
                 processData: false,
             }).done(function(){
-                // window.location="/admin/podcatalog_three";
+                 window.location="/admin/podcatalog_three/<?php echo $cat_id ?>";
                 $('#modal_edit').hide();
                 $("#forma_update")[0].reset();
             });
         });
 
         // DELETE
-
         $(".delete_cat").on('click', function(){
             var cat_id = $(this).data('id');
             var cat_img = $(this).data('img');
@@ -233,11 +236,8 @@
                 method: "POST",
                 url: "/admin/requestCatThree/delete_subcat_three",
                 data: {'id': cat_id, 'img':cat_img},
-
-
             }).done(function(){
-                print_r(data);
-                //window.location="/admin/podcatalog_three/<?php //echo $cat_id ?>//"";
+                window.location="/admin/podcatalog_three/<?php echo $cat_id ?>";
             });
         });
     });
