@@ -175,7 +175,6 @@
         });
 
         // DELETE
-
         $(".delete_cat").on('click', function(){
             var cat_id = $(this).data('id');
             var cat_img = $(this).data('img');

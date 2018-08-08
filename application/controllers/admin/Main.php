@@ -47,6 +47,7 @@ class Main extends CI_Controller {
         $this->load->view('admin/catalogs_two', $data);
         $this->load->view('admin/footer/footer.php');
     }
+    
 
 //========================= CATALOG THREE ==========================//
     //insert
@@ -60,14 +61,32 @@ class Main extends CI_Controller {
 		$this->load->view('admin/catalogs_three', $data);
 		$this->load->view('admin/footer/footer.php');
 	}
+<<<<<<< HEAD
 
+=======
+>>>>>>> 69177ec578cf047343fdd2bfa476eb9622220f0c
 
 //========================= SUBCATALOGS THREE ==========================//
+    //insert
     public function podcatalog_three($id)
     {
         $this->load->model('admin/mainmodels');
         $result = $this->mainmodels->get_podcatalog_three($id);
+<<<<<<< HEAD
 
+=======
+        $data = array(
+            "data" => $result,
+            'cat_id'=>$id
+        );
+        $this->load->view('admin/podcatalog_three', $data);
+        $this->load->view('admin/footer/footer.php');
+    }
+    //update
+    public function edit_cat_three($id){
+        $this->load->model('admin/mainmodels');
+        $result = $this->mainmodels->get_id_three($id);
+>>>>>>> 69177ec578cf047343fdd2bfa476eb9622220f0c
         $data = array(
             "data" => $result,
             'cat_id'=>$id
@@ -82,36 +101,86 @@ class Main extends CI_Controller {
 		$this->load->view('admin/reserve');
 		$this->load->view('admin/footer/footer.php');
 	}
+
+//========================= VIP_BOOKING_SERVICES ==========================//
 	public function reserve_vip()
 	{
-		$this->load->view('admin/reserve_vip');
+        $this->load->model('admin/mainmodels');
+        $result = $this->mainmodels->get_vip();
+        $data = array(
+            "data" => $result
+        );
+		$this->load->view('admin/reserve_vip', $data);
 		$this->load->view('admin/footer/footer.php');
 	}
+
+//========================= RESTAURANT ==========================//
 	public function reserve_kitchen()
 	{
-		$this->load->view('admin/reserve_kitchen');
+        $this->load->model('admin/mainmodels');
+        $result = $this->mainmodels->get_kitchen();
+        $data = array(
+            "data" => $result
+        );
+		$this->load->view('admin/reserve_kitchen', $data);
 		$this->load->view('admin/footer/footer.php');
 	}
+
+//========================= SHOW ==========================//
 	public function reserve_show()
 	{
-		$this->load->view('admin/reserve_show');
+        $this->load->model('admin/mainmodels');
+        $result = $this->mainmodels->get_show();
+        $data = array(
+            "data" => $result
+        );
+		$this->load->view('admin/reserve_show', $data);
 		$this->load->view('admin/footer/footer.php');
 	}
+
+//========================= TRANSPORTATION SERVICES ==========================//
 	public function reserve_search_car()
 	{
-		$this->load->view('admin/reserve_search_car');
+        $this->load->model('admin/mainmodels');
+        $result = $this->mainmodels->get_transport();
+        $data = array(
+            "data" => $result
+        );
+		$this->load->view('admin/reserve_search_car', $data);
 		$this->load->view('admin/footer/footer.php');
 	}
+
+//========================= BOOKING PACKAGE (CHIP) ==========================//
 	public function reserve_chip()
 	{
-		$this->load->view('admin/reserve_chip');
+        $this->load->model('admin/mainmodels');
+        $result = $this->mainmodels->get_chip();
+        $data = array(
+            "data" => $result
+        );
+		$this->load->view('admin/reserve_chip', $data);
 		$this->load->view('admin/footer/footer.php');
 	}
-	public function users()
+
+//========================= ACCOMMODATION PACKAGE ==========================//
+    public function accommodation()
+    {
+        $this->load->model('admin/mainmodels');
+        $result = $this->mainmodels->get_accommodation();
+        $data = array(
+            "data" => $result
+        );
+        $this->load->view('admin/accommodation_package', $data);
+        $this->load->view('admin/footer/footer.php');
+    }
+
+
+    public function users()
 	{
 		$this->load->view('admin/users');
 		$this->load->view('admin/footer/footer.php');
 	}
+
 	public function profile()
 	{
 //        
@@ -128,13 +197,14 @@ class Main extends CI_Controller {
 	{
 		$this->load->view('catalogs');
 	}
-	public function podcatalogs($id)
-	{
-	    $result = $this->MainModels->get_services($id);
-	     $data = array(
-            "data" => $result
-        );
-		$this->load->view('admin/podcatalogs',$data);
-		$this->load->view('admin/footer/footer.php');
-	}
+	// // для каталог 2 . тут услуги
+	// public function podcatalogs($id)
+	// {
+	//     $result = $this->MainModels->get_services();
+	//      $data = array(
+ //            "data" => $result
+ //        );
+	// 	$this->load->view('admin/podcatalogs_two',$data);
+	// 	$this->load->view('admin/footer/footer.php');
+	// }
 }

@@ -143,7 +143,6 @@ class RequestCatThreeModels extends CI_Model
         $img_name = $this->input->post('img_name', true);
         $img = $this->image();
 
-
         if ($img == "") {
             $data = array(
                 'id' => $id_cat,
@@ -177,10 +176,13 @@ class RequestCatThreeModels extends CI_Model
     public function delete_subcat_three()
     {
         $id_cat_three = $this->input->post('id', true);
-        $cat_img = $this->input->post('img_name', true);
+        $cat_img = $this->input->post('img', true);
+
         unlink('assets/upload/images/cat_three/' . $cat_img);
         unlink('assets/upload/thumb/cat_three/' . $cat_img);
+        print_r($cat_img);print_r($id_cat_three);
+
         $this->db->where('id', $id_cat_three);
-        $this->db->delete('category_three');
+        $this->db->delete('sub_category_three');
     }
 }
