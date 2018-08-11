@@ -1,8 +1,19 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+    font-family: 'entypo', sans-serif;
+}
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/materialicons/v38/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .material-icons {
     font-family: 'Material Icons';
@@ -20,9 +31,7 @@
     cursor: pointer;
 }
 body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    
     background-color: #fff;
 /*    background-image: url(image/22.jpg);*/
 /*    background-size: auto;*/
@@ -41,10 +50,11 @@ body{
     top: 0;
     z-index: 99;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    
 }
 .header .marquee{
-    width: 70%;
+    width: 65%;
     margin: 5px 0;
     white-space:nowrap;
     overflow:hidden;
@@ -69,17 +79,59 @@ body{
     100%{transform: translate(-100%, 0)}
 }
 .header .header_language{
-    width: 20%;
+    width: 140px;
+    display: flex;
+    justify-content: flex-end;
+    /*    border:1px solid ;*/
 }
 .header .language{
-    width: 30%;
-    margin: 0 auto;
+    width: 100px;
+}
+.header .sign_in{
+    min-width: 200px;
+    height: auto;
+    /*     border:1px solid ;*/
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .sign_in a {
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: #5a5a5a;
+    font-weight: 100;
+    padding: 0 10px;
+}
+.header .sign_in p{
+    font-size: 15px;
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+/*.header .sign_in .entypo-down-open-mini{*/
+    /*font-size: 25px;*/
+    /*padding: 2px 0 0 5px;*/
+    /*color: #ff0000*/
+/*}*/
+.header .sign_in a span{
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0 8px;
+    padding: 0;
+}
+.header .sign_in a:hover{
+    color: brown
 }
 .header .language select{
-    width: 100%;
+    width: 80px;
     height: 20px;
     margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     text-align: center;
     background: rgba(255,255,255,0);
     border: 1px solid #323346;
@@ -118,7 +170,7 @@ select option{
     height: 40px;
     line-height: 40px;
     padding-top: 6px;
-    background: url(../../../assets/main/image/celsius_bg.png) no-repeat;
+    background: url(../image/celsius_bg.png) no-repeat;
     text-align: center;
 }
 .header_datetime .weather_gr{
@@ -450,7 +502,7 @@ select option{
     height: 30px;
     background-color: rgba(0, 0, 0, 0.8);
     border: 1px solid #999999;
-    margin: 5px 0 20px; 0;
+    margin: 5px 0 20px 0;
     color: #fff;
     font-size: 16px;
     padding: 0 10px;
@@ -528,6 +580,55 @@ select option{
     height: 100%;
     
 }
+.link_category{
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+}
+.link_category a{
+    position: relative;
+    color: #808080;
+    text-decoration: none;
+    padding: 0 10px 0 0;
+    margin-right: 10px;
+    font-size: 15px;
+}
+.link_category a .arrow {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 10px;
+    /*        height: 2px;*/
+    background-color: silver;
+}
+.link_category a .arrow:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 1px;
+    background-color: silver;
+    transform: rotate(-45deg);
+    transform-origin: 100% 0%;
+}
+.link_category a .arrow:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 1px;
+    background-color: silver;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+.link_category .active{
+    color: dodgerblue
+}
 .article .art_count_text{
     width: 80%;
     height: auto;
@@ -562,8 +663,8 @@ select option{
     justify-content: space-between;
 }
 .article .art_c_blog .art_c_blog_parent{
-    width: 335px;
-    height: 300px;
+    width: 30%;
+    height: auto;
 /*    border: 1px solid red;*/
     margin: 0 0px 40px 0;
     padding: 0;
@@ -694,11 +795,11 @@ select option{
     min-height: 100vh;
     border: 1px solid silver;
     margin: 150px auto 0 auto;
-    padding: 50px 0;
+    padding: 0 0 30px 0;
 }
 .article .subdirectory h3{
     width: 80%;
-    margin: 30px auto 10px auto;
+    margin: 50px auto 10px auto;
     font-size: 35px;
     text-align: center;
     font-weight: 200;
@@ -776,10 +877,13 @@ select option{
 .reserve_blog_click button{
     width: 100%;
     height: 40px;
-    font-size: 20px;
-    background: #fff;
+    font-size: 18px;
+    font-weight: 100;
+    border-radius: 5px;
+    background: #75a3a3;
     border: none;
-    color: brown;
+    color: #fff;
+    cursor: pointer;
 }
 /*
 .modals{
@@ -880,63 +984,176 @@ select option{
 .form_bron{
     width: 600px;
     height: auto;
+    min-height: 150px;
     background: #83afaf;
     margin: 20px auto 0 auto;
     box-sizing: border-box;
-    padding: 50px 0;
+    padding: 40px 0;
     border-radius: 10px;
 }
+/*
 .form_content{
     width: 85%;
     height: auto;
     margin: 0 auto;
 }
-.form_content form{
+*/
+.form_bron .res_form{
+    width: 85%;
+    height: auto;
+    margin: 0 auto 15px auto;
+/*    border: 1px solid red;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    color: #fff;
 }
-.form_content .bron_label_style_one{
-    width: 150px;
+.form_bron .res_form .bron_label_style_one{
+    width: 170px;
     text-align: right;
-    font-size: 18px;
+    font-size: 17px;
     color: #fff;
     padding: 0 10px 0 0;
 }
-.form_content .bron_input_style_one,
-.form_content .bron_input_style_two,
-.form_content .bron_input_style_three{
+.form_bron .res_form .bron_input_style_one{
     width: 320px;
     height: 40px;
-    margin: 0 0 20px 0;
+    margin: 0;
     background: none;
     border: 1px solid #fff;
     color: #fff;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 100;
 }
-.form_content .bron_input_style_two{
-    width: 90px;
-}
-.form_content .bron_label_style_two, 
-.form_content .bron_label_style_three{
-    width: 150px;
-    text-align: left;
-    font-size: 16px;
+.form_bron .res_form .bron_label_style_two{
+    width: 160px;
     color: #fff;
+    font-size: 15px;
 }
-.form_content .bron_input_style_three{
-    width: 170px;
+.form_bron .res_form  .bron_input_style_two{
+    width: 160px;
+    height: 40px;
+    margin: 0 5px 0 0;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 100;
 }
-.form_content .bron_label_style_three{
-    width: 300px;
+.bron_input_style_two::-webkit-outer-spin-button,
+        .bron_input_style_two::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
-.form_content .bron_submit{
+.form_bron .res_form .tcalInput {
+	background: url('../image/dist/cal.png') 98% 50% no-repeat;
+    background-size: 30px;
+	padding: 0 10px;
+	cursor: pointer;
+    width: 160px;
+    height: 40px;
+    border: 1px solid #fff;
+    color: #fff;
+    filter: brightness(10);
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.form_bron form .knopka_res{
+    width: 150px;
+    margin: 30px auto 0 auto;
+}
+.form_bron .knopka_res .bron_submit{
     width: 150px;
     height: 40px;
     background: #ff5050;
     border: none;
     color: #fff;
     font-size: 20px;
-    margin: 20px auto 0 auto;
+    border-radius: 5px;
+}
+.form_bron .res_form .cs{
+    position:relative;
+    display:inline-block;
+    cursor:pointer
+}
+.form_bron .res_form .cs__control{
+    display:none;
+    visibility:hidden
+}
+.form_bron .res_form .cs__select{
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    transition:all .2s ease-in
+}
+.form_bron .res_form .cs__select:after{
+    position:absolute;
+    width:0;
+    height:0;
+    border-style:solid;
+    border-color:transparent;
+    content:""
+}
+.form_bron .res_form .cs__options{
+    position:absolute;
+    top:100%;
+    right:0;
+    left:0;
+    z-index:1;
+    display:none;
+    margin:0;
+    padding:0;
+    list-style:none
+}
+.form_bron .res_form .cs__option{
+    transition:all .15s ease-in
+}
+.form_bron .res_form .cs{
+    width: 320px;
+    height:2.5em;
+    font-size:16px;
+    color:#fff
+}
+.form_bron .res_form .cs__select{
+    width: 320px;
+    padding:0 2.125em 0 .625em;
+    line-height:2.5em;
+    background-color:rgba(0,0,0,0);
+    border: 1px solid #fff;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.form_bron .res_form .cs__select.cs__select_active:after{
+    top:25%;
+    bottom:1.03125em;
+    border-top-color:transparent;
+    border-bottom-color:#fff
+}
+
+.form_bron .res_form .cs__select:after{
+    top:1.03125em;
+    right:.625em;
+    border-width:.4375em;
+    border-top-color:#fff
+}
+.form_bron .res_form .cs__options{
+    background-color:#ccccff;
+}
+.form_bron .res_form .cs__option{
+    padding:.5em .625em;
+    border:1px solid #fff;
+    border-top: 0;
+}
+.form_bron .res_form .cs__option:hover{
+    color:#c0392b;
+    background-color:#fff
 }
 .reserv_ssylka a{
     color: #fff;
@@ -1014,22 +1231,9 @@ select option{
     flex-wrap: wrap;
     justify-content: flex-start;
 }
-.form_content .bron_label_style_foure1, .form_content .bron_label_style_foure2{
-    width: 30%;
-    text-align: right;
-    color: #fff;
-    padding: 0 7px 0 0;
-}
-.form_content .bron_label_style_foure2{
-    width: 20%;
-}
-.bron_input_style_foure{
-    width: 20%;
-    height: 50px;
-    background: none;
-    border: 1px solid #fff;
-    color: #fff;
-}
+
+
+
 /*restaurants*/
 .restaurant_filter{
     width: 50%;
@@ -1177,7 +1381,7 @@ p .span1{
 .modal_content{
     position: fixed;
     width: 85%;
-    height: 85vh;
+    height: 90vh;
     top: 30px;
     border: 1px solid #fff;
     background: rgba(0,0,0,.7);
@@ -1195,14 +1399,16 @@ p .span1{
     width: 30px;
     height: auto;
     float: right;
-    padding: 5px 8px;
-    background: brown;
+    margin-right: 16px;
+
 }
 .modals 
 .close_modal 
 .material-icons {
     font-size: 30px;
     color: #fff;
+    background: brown;
+    padding: 5px 8px;
 }
 
 .modals 
@@ -1238,8 +1444,8 @@ p .span1{
 .modals 
 .content_info
 .mod_con_right_body{
-    width: 80%;
-    height: 12vw;
+    width: 90%;
+    height: auto;
     background: rgba(0,0,0, .7);
     border: 1px solid silver;
     margin: 0 auto;

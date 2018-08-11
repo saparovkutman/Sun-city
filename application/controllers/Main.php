@@ -7,6 +7,9 @@ class Main extends CI_Controller {
 		parent::__construct();
 		$this->load->helper('url');
 		$this->load->helper('html');
+        $this->load->library('authitalluser');
+		$this->load->helper('authit');
+		$this->config->load('authit');
 		$this->load->view('main/header/header.php');
 	}
 

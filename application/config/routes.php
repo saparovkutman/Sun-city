@@ -50,6 +50,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'main/index';
+/*===============MAIN AUTHIT ROUTES===================*/
+$route['login'] = '/authalluser/login';
+$route['signup'] = '/authalluser/signup';
+$route['logout'] = '/authalluser/logout';
+/*===============End MAIN AUTHIT ROUTES===================*/
+
 /*===============MAIN ROUTES===================*/
 $route['package'] = '/main/subcategory_one';
 
@@ -68,6 +74,7 @@ $route['admin/login'] = '/admin/auth/login';
 $route['admin/signup'] = '/admin/auth/signup';
 $route['admin/logout'] = '/admin/auth/logout';
 /*===============End ADMIN AUTHIT ROUTES===================*/
+
 /*===============ADMIN ROUTES===================*/
 $route['admin'] = '/admin/main/index';
 $route['admin/reserve'] = '/admin/main/reserve';

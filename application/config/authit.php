@@ -9,7 +9,8 @@
  */
 
 $config['authit_users_table'] = 'users_admin';
-$config['authit_password_min_length'] = 4;
+$config['authit_all_users_table'] = 'all_users';
+$config['authit_password_min_length'] = 6;
 // Do you want to test the emails you send out?
 //    If you do you can view the results by going to ../auth/sentemails
 $config['authit_test_emails'] = true;

@@ -1,5 +1,9 @@
 <div class="article">
     <div class="subdirectory">
+        <div class="link_category">
+            <a href="">Home<span class="arrow"></span></a>
+            <a href="" class="active">Vip<span class="arrow"></span></a>
+        </div>
         <h3>VIP Suites Reserve</h3>
         <div class="subdirectory_blogs">
             <div class="subdirectory_blog">

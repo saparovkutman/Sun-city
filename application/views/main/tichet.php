@@ -1,5 +1,9 @@
 <div class="article">
     <div class="subdirectory">
+        <div class="link_category">
+            <a href="">Home<span class="arrow"></span></a>
+            <a href="" class="active">Vip<span class="arrow"></span></a>
+        </div>
         <h3>Admission tichet booking</h3>
         <h5>Suncity Group takes you into a splendid world of entertainment to enjoy a variety of stunning performances. Book your tickets now to create an unforgettable sensory experience!</h5>
 
