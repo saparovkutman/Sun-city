@@ -58,7 +58,7 @@
                                         <tr>
                                             <td class="text-center"><?= $i?></td>
                                             <td class="txt-oflo"><?php echo $category->date ?></td>
-                                            <td class="txt-oflo"><?php echo $category->time ?></td>
+                                            <td class="txt-oflo"><?php echo $category->type ?></td>
                                             <td class="txt-oflo"><?php echo $category->count_people ?></td>
                                             <td>  <button type="button" class="btn btn-danger delete_cat" data-id="<?php echo $category->id?>">Delete</button></td>
                                         </tr>

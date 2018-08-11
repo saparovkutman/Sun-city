@@ -46,7 +46,8 @@
                                         <tr>
                                             <th class="text-center">#</th>                            
                                             <th>Дата</th>
-                                            <th>Время</th>                                            
+                                            <th>Часы</th>
+                                            <th>Минуты</th>
                                             <th>Количество людей</th>
                                             <th>action</th>
                                         </tr>
@@ -58,7 +59,8 @@
                                         <tr>
                                             <td class="text-center"><?= $i?></td>
                                             <td class="txt-oflo"><?php echo $category->date ?></td>
-                                            <td class="txt-oflo"><?php echo $category->time ?></td>
+                                            <td class="txt-oflo"><?php echo $category->houre ?></td>
+                                            <td class="txt-oflo"><?php echo $category->minute ?></td>
                                             <td class="txt-oflo"><?php echo $category->count_people ?></td>
                                             <td>  <button type="button" class="btn btn-danger delete_cat" data-id="<?php echo $category->id?>">Delete</button></td>
                                         </tr>

@@ -25,7 +25,7 @@
                             <h5>Monkey King</h5>
                             <p><span class="span1">Date:</span><span>15.02.2018 to 31.02.2018 (20:00)</span></p>
                             <p><span class="span1">Location:</span><span>Sands Cotai Theatre</span></p>
-                            <div class="sub_d_v_info_button open-modal">
+                            <div data-id="<?php echo $id?>" class="sub_d_v_info_button open-modal">
                                 Details
                             </div>
                         </div>
@@ -93,7 +93,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="/tichet/reserve" class="mod_button_a">
+                    <a href="/tichet/reserve?id=<?=$id?>" class="mod_button_a">
                         <div class="mod_button">
                             BOOK
                         </div>

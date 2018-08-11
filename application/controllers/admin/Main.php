@@ -61,39 +61,20 @@ class Main extends CI_Controller {
 		$this->load->view('admin/catalogs_three', $data);
 		$this->load->view('admin/footer/footer.php');
 	}
-<<<<<<< HEAD
-
-=======
->>>>>>> 69177ec578cf047343fdd2bfa476eb9622220f0c
-
 //========================= SUBCATALOGS THREE ==========================//
     //insert
     public function podcatalog_three($id)
     {
         $this->load->model('admin/mainmodels');
         $result = $this->mainmodels->get_podcatalog_three($id);
-<<<<<<< HEAD
+        $data = array(
+            "data" => $result,
+            'cat_id'=>$id
+        );
+        $this->load->view('admin/podcatalog_three', $data);
+        $this->load->view('admin/footer/footer.php');
+    }
 
-=======
-        $data = array(
-            "data" => $result,
-            'cat_id'=>$id
-        );
-        $this->load->view('admin/podcatalog_three', $data);
-        $this->load->view('admin/footer/footer.php');
-    }
-    //update
-    public function edit_cat_three($id){
-        $this->load->model('admin/mainmodels');
-        $result = $this->mainmodels->get_id_three($id);
->>>>>>> 69177ec578cf047343fdd2bfa476eb9622220f0c
-        $data = array(
-            "data" => $result,
-            'cat_id'=>$id
-        );
-        $this->load->view('admin/podcatalog_three', $data);
-        $this->load->view('admin/footer/footer.php');
-    }
 
 //========================= RESERVE ==========================//
 	public function reserve()
@@ -163,12 +144,13 @@ class Main extends CI_Controller {
 	}
 
 //========================= ACCOMMODATION PACKAGE ==========================//
-    public function accommodation()
+    public function accommodation($id)
     {
         $this->load->model('admin/mainmodels');
-        $result = $this->mainmodels->get_accommodation();
+        $result = $this->mainmodels->get_accommodation($id);
         $data = array(
-            "data" => $result
+            "data" => $result,
+            'id_cat' => $id
         );
         $this->load->view('admin/accommodation_package', $data);
         $this->load->view('admin/footer/footer.php');

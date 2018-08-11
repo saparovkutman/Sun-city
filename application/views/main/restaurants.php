@@ -93,7 +93,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="/restaurant/reserve" class="mod_button_a">
+                    <a href="/restaurant/reserve?id=<?=$id?>" class="mod_button_a">
                         <div class="mod_button">
                             BOOK
                         </div>

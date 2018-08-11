@@ -50,7 +50,7 @@ class ReserveController  extends CI_Controller
         $this->db->delete('booking_package');
     }
 
-//========================= BOOKING PACKEGE (CHIP) ==========================//
+//=========================  ==========================//
 //delete
     public function delete_vip()
     {
@@ -59,7 +59,7 @@ class ReserveController  extends CI_Controller
         $this->db->delete('VIP_booking_services');
     }
 
-    //========================= BOOKING PACKEGE (CHIP) ==========================//
+    //========================= ACCOMMODATION PACKAGE ==========================//
 //delete
     public function delete_accommodation_package()
     {

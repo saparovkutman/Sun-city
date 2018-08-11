@@ -18,7 +18,8 @@ class Main extends CI_Controller {
 	}
     public function subcategory_one()
 	{
-		$this->load->view('main/subcategory_one');
+        $data['cat_id'] = $this->input->get('id');
+		$this->load->view('main/subcategory_one',$data);
 		$this->load->view('main/footer/footer.php');
 	}
     public function subcategory_two()
@@ -28,17 +29,20 @@ class Main extends CI_Controller {
 	}
     public function reserve_form_package_subcattwo()
 	{
-		$this->load->view('main/package_form');
+        $data['id'] = $this->input->get('id');
+		$this->load->view('main/package_form', $data);
 		$this->load->view('main/footer/footer.php');
 	}
     public function reserve_form_restaurant_subcattwo()
 	{
-		$this->load->view('main/restaurants_form');
+        $data['id'] = $this->input->get('id');
+		$this->load->view('main/restaurants_form',$data);
 		$this->load->view('main/footer/footer.php');
 	}
     public function reserve_form_tichet_subcattwo()
 	{
-		$this->load->view('main/tichet_form');
+        $data['id'] = $this->input->get('id');
+		$this->load->view('main/tichet_form', $data);
 		$this->load->view('main/footer/footer.php');
 	}
     
@@ -54,18 +58,21 @@ class Main extends CI_Controller {
 	}
     public function subcategory_two_view($id)
 	{
-        echo $id;
         if($id==1){
-            $this->load->view('main/package');
+            $data['id']=$id;
+            $this->load->view('main/package', $data);
         }
 		elseif($id==2){
-            $this->load->view('main/transportation');
+            $data['id']=$id;
+            $this->load->view('main/transportation', $data);
         }
         elseif($id==3){
-            $this->load->view('main/restaurants');
+            $data['id']=$id;
+            $this->load->view('main/restaurants',$data);
         }
         elseif($id==4){
-            $this->load->view('main/tichet');
+            $data['id']=$id;
+            $this->load->view('main/tichet', $data);
         }
 		$this->load->view('main/footer/footer.php');
 	}

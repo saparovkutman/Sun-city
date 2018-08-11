@@ -65,7 +65,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="/package/reserve" class="mod_button_a">
+                    <a href="/package/reserve?id=<?=$id?>" class="mod_button_a">
                         <div class="mod_button">
                             BOOK
                         </div>
