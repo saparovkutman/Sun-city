@@ -18,10 +18,18 @@ class MainModels extends CI_Model{
 //========================= CATALOG TWO ==========================//
     public function get_cat_two()
     {
+<<<<<<< HEAD
+        
+        $select = $this->db->get('category_two');
+        $cat_two = $select->result();
+        return $cat_two;
+=======
              $select = $this->db->get('category_two');
              $cat_two = $select->result();
              return $cat_two;
+>>>>>>> 69177ec578cf047343fdd2bfa476eb9622220f0c
     }
+   
 
 //========================= CATALOG THREE ==========================//
     public function get_cat_three()
@@ -40,6 +48,36 @@ class MainModels extends CI_Model{
     }
 
 // get services
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 69177ec578cf047343fdd2bfa476eb9622220f0c
+    public function get_services($id){
+          $this->db->where('category_id',$id);
+          $select = $this->db->get('sub_category_two');
+          $cat_three = $select->result();
+          return $cat_three;
+    }
+<<<<<<< HEAD
+
+
+    public function profile($user_id)
+    {   
+        $this->db->where('id',  $user_id);
+        $select = $this->db->get('users_admin');
+        $user = $select->result();
+        return $user;
+    }
+=======
+//========================= RESTAURANTS ==========================//
+    // get_kitchen
+    public function get_kitchen(){
+//        $this->db->where('cat_id');
+        $select = $this->db->get('booking_restaurants');
+        $cat_kitchen = $select->result();
+        return $cat_kitchen;
+    }
+=======
 public function get_services(){
           $select = $this->db->get('sub_category_two');
           return $select->result();
@@ -47,11 +85,48 @@ public function get_services(){
 
 
 
+>>>>>>> 4c39bb1706466efc3542d8b5da86fe2977158d3b
+>>>>>>> 69177ec578cf047343fdd2bfa476eb9622220f0c
 
+//========================= TICKET BOOKING(SHOW) ==========================//
+    // get_show
+    public function get_show(){
+        $select = $this->db->get('ticket_booking');
+        $cat_show = $select->result();
+        return $cat_show;
+    }
 
+//========================= TRANSPORTATION SERVICES ==========================//
+    // get_show
+    public function get_transport(){
+        $select = $this->db->get('transportation_services');
+        $cat_transport = $select->result();
+        return $cat_transport;
+    }
 
+//========================= BOOKING PACKAGE (CHIP) ==========================//
+// get_chip
+    public function get_chip(){
+        $select = $this->db->get('booking_package');
+        $cat_chip = $select->result();
+        return $cat_chip;
+    }
 
+//========================= VIP_BOOKING_SERVICES  ==========================//
+// get_vip
+    public function get_vip(){
+        $select = $this->db->get('VIP_booking_services');
+        $cat_vip = $select->result();
+        return $cat_vip;
+    }
 
+//=========================  ACCOMMODATION PACKAGE  ==========================//
+// get_accommodation
+    public function get_accommodation(){
+        $select = $this->db->get('accommodation_package');
+        $cat_accommodation = $select->result();
+        return $cat_accommodation;
+    }
 
 
 }

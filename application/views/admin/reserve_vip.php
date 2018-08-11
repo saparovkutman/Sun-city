@@ -54,21 +54,29 @@
                                             <th>Тип отзыва</th>
                                             <th>Номер телефона</th>
                                             <th>Специальные требования</th>
+                                            <th>action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
+                                    <?php
+                                    $i=1;
+                                    foreach ($data as $category): ?>
                                         <tr>
-                                            <td class="text-center">1</td>
-                                            <td class="txt-oflo">Client's name</td>
-                                            <td class="txt-oflo">VIP бронирование</td>
-                                            <td class="txt-oflo">Date</td>
-                                            <td class="txt-oflo">Time</td>
-                                            <td class="txt-oflo">Summ</td>
-                                            <td class="txt-oflo">Chip</td>
-                                            <td class="txt-oflo">Otzyv</td>                           
-                                            <td class="txt-oflo">Number phone</td>
-                                            <td class="txt-oflo">Special</td>                         
+                                            <td class="text-center"><?= $i?></td>
+                                            <td class="txt-oflo"><?php echo $category->client_name ?></td>
+                                            <td class="txt-oflo"><?php echo $category->vip_booking ?></td>
+                                            <td class="txt-oflo"><?php echo $category->date ?></td>
+                                            <td class="txt-oflo"><?php echo $category->time ?></td>
+                                            <td class="txt-oflo"><?php echo $category->total ?></td>
+                                            <td class="txt-oflo"><?php echo $category->type_of_chip ?></td>
+                                            <td class="txt-oflo"><?php echo $category->review_type ?></td>
+                                            <td class="txt-oflo"><?php echo $category->number_phone ?></td>
+                                            <td class="txt-oflo"><?php echo $category->requirements ?></td>
+                                            <td>  <button type="button" class="btn btn-danger delete_cat" data-id="<?php echo $category->id?>">Delete</button></td>
                                         </tr>
+                                        <?php
+                                        $i++;
+                                    endforeach;?>
                                     </tbody>
                                 </table>
                             </div>
@@ -80,4 +88,20 @@
         <!-- ============================================================== -->
         <!-- End Page wrapper  -->
         <!-- ============================================================== -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            // DELETE
+            $(".delete_cat").on('click', function(){
+                var cat_id = $(this).data('id');
+
+                $.ajax({
+                    method: "POST",
+                    url: "/admin/reservecontroller/delete_vip",
+                    data: {'id': cat_id},
+                }).done(function(){
+                    window.location="/admin/reserve_vip";
+                });
+            });
+        </script>
        

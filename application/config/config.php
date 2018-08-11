@@ -23,9 +23,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
+<<<<<<< HEAD
 
 $config['base_url'] = 'http://localhost/sun-city';
 
+=======
+<<<<<<< HEAD
+$config['base_url'] = 'http://php2.kg/';
+=======
+<<<<<<< HEAD
+$config['base_url'] = 'http://localhost/sun-city';
+=======
+$config['base_url'] = 'http://kutman.kg/';
+>>>>>>> 080a0d49af9f61817675214923a49aeae242dd85
+>>>>>>> 69177ec578cf047343fdd2bfa476eb9622220f0c
+>>>>>>> 7e5d846ba75820a9eb3fcb57480aeccb25575b87
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -36,7 +48,7 @@ $config['base_url'] = 'http://localhost/sun-city';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 
 /*

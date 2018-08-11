@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e1f63636-2abc-45b8-85b8-9c707155f86c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/admin/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/admin/Main.php" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/application/controllers/admin/Podcatalog_two.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/admin/Podcatalog_two.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/admin/catalogs_one.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/catalogs_one.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/admin/podcatalogs_two.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/podcatalogs_two.php" afterDir="false" />
@@ -23,6 +23,33 @@
       <change beforePath="$PROJECT_DIR$/assets/upload/thumb/cat_two/d6ba8be958fa7a7c664be8f215307927.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/upload/thumb/cat_two/e8e80116e26e439bf4f288017e4ec4fb.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/upload/thumb/cat_two/ffb222224e37c62a8316b1ec0889c7d6.jpg" beforeDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/application/models/admin/MainModels.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/admin/MainModels.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/admin/RequestCatThreeModels.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/admin/RequestCatThreeModels.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/catalogs_three.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/catalogs_three.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/podcatalog_three.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/podcatalog_three.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/reserve_chip.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/reserve_chip.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/reserve_kitchen.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/reserve_kitchen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/reserve_search_car.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/reserve_search_car.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/reserve_show.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/reserve_show.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/reserve_vip.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/reserve_vip.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/cat_three/3e5cfdc043957db74bf0445f9096a647.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/cat_three/3f568b875073003d94584f733830e12c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/cat_three/4f9ffe7370c2f80cff11e2e23350bd68.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/cat_three/68a822eb1f255edefce3fc27b13f3b61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/cat_three/77a97538cf4bcbf32a4036fd97f7c2eb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/cat_three/88d9fc938b6099211f41394b8f8146a7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/cat_three/a50881bc0359e4aedb487adada47ba47.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/cat_three/c23c6f134aab39865819bfb878334341.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/cat_three/e157c83b415609128a777bfe01c0e0c5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/cat_three/fead1e06c5e78f42249d8b57614897ef.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/thumb/cat_three/3e5cfdc043957db74bf0445f9096a647.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/thumb/cat_three/4f9ffe7370c2f80cff11e2e23350bd68.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/thumb/cat_three/68a822eb1f255edefce3fc27b13f3b61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/thumb/cat_three/88d9fc938b6099211f41394b8f8146a7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/thumb/cat_three/c23c6f134aab39865819bfb878334341.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_reserves.sql" beforeDir="false" />
+>>>>>>> 7e5d846ba75820a9eb3fcb57480aeccb25575b87
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,34 +65,36 @@
     <session id="-588072404">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.110" value="1" />
           <entry key="project.open.time.121" value="1" />
+          <entry key="project.open.time.122" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.92" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.96" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="2" />
-          <entry key="php" value="65" />
+          <entry key="php" value="78" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="2" />
-          <entry key="PHP" value="65" />
+          <entry key="PHP" value="78" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="1435" />
+          <entry key="php" value="2103" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="1435" />
+          <entry key="PHP" value="2103" />
         </counts>
       </usages-collector>
     </session>
@@ -75,6 +104,7 @@
       <file leaf-file-name="services_book.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/admin/services/services_book.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="136">
               <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
               <folding>
@@ -82,10 +112,33 @@
                 <element signature="e#7504#8024#0#HTML" />
                 <element signature="e#8083#8595#0#HTML" />
               </folding>
+=======
+            <state relative-caret-position="205">
+              <caret line="154" column="33" selection-start-line="154" selection-start-column="20" selection-end-line="154" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/admin/MainModels.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="415">
+              <caret line="92" column="37" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/admin/ReserveController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="23" />
+>>>>>>> 7e5d846ba75820a9eb3fcb57480aeccb25575b87
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
       <file leaf-file-name="Podcatalog_two_models.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/models/admin/Podcatalog_two_models.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -108,10 +161,38 @@
                 <element signature="n#add_show#1;n#Podcatalog_two_models#0;n#!!top" />
                 <element signature="n#update_book#0;n#Podcatalog_two_models#0;n#!!top" />
               </folding>
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/admin/reserve_vip.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-68">
+              <caret line="73" column="99" selection-end-line="106" selection-end-column="7" />
+>>>>>>> 7e5d846ba75820a9eb3fcb57480aeccb25575b87
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/admin/accommodation_package.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="569">
+              <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/admin/reserve_chip.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="37">
+              <caret line="71" column="17" lean-forward="true" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+>>>>>>> 7e5d846ba75820a9eb3fcb57480aeccb25575b87
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -129,13 +210,10 @@
         <option value="$PROJECT_DIR$/application/models/admin/RequestCatOneModels.php" />
         <option value="$PROJECT_DIR$/application/views/admin/catalogs_two.php" />
         <option value="$PROJECT_DIR$/application/views/admin/subcatalog_two.php" />
-        <option value="$PROJECT_DIR$/application/config/routes.php" />
         <option value="$PROJECT_DIR$/application/controllers/admin/RequestCatThree.php" />
-        <option value="$PROJECT_DIR$/application/models/admin/MainModels.php" />
-        <option value="$PROJECT_DIR$/application/controllers/admin/Main.php" />
         <option value="$PROJECT_DIR$/application/views/admin/catalogs_three.php" />
-        <option value="$PROJECT_DIR$/application/views/admin/podcatalog_three.php" />
         <option value="$PROJECT_DIR$/application/models/admin/RequestCatThreeModels.php" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/application/views/admin/catalogs_one.php" />
         <option value="$PROJECT_DIR$/application/views/admin/services/services_transport.php" />
         <option value="$PROJECT_DIR$/application/controllers/admin/Podcatalog_two.php" />
@@ -144,6 +222,19 @@
         <option value="$PROJECT_DIR$/application/views/admin/podcatalogs_two.php" />
         <option value="$PROJECT_DIR$/application/views/admin/services/services_show.php" />
         <option value="$PROJECT_DIR$/application/views/admin/services/services_book.php" />
+=======
+        <option value="$PROJECT_DIR$/application/views/admin/podcatalog_three.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/reserve_kitchen.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/reserve_show.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/reserve_search_car.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/reserve_chip.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/reserve_vip.php" />
+        <option value="$PROJECT_DIR$/application/models/admin/MainModels.php" />
+        <option value="$PROJECT_DIR$/application/controllers/admin/ReserveController.php" />
+        <option value="$PROJECT_DIR$/application/controllers/admin/Main.php" />
+        <option value="$PROJECT_DIR$/application/config/routes.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/accommodation_package.php" />
+>>>>>>> 7e5d846ba75820a9eb3fcb57480aeccb25575b87
       </list>
     </option>
   </component>
@@ -161,7 +252,7 @@
       <path value="$PROJECT_DIR$/assets/admin/assets/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1040" />
@@ -187,8 +278,57 @@
             <path>
               <item name="Sun-city" type="b2602c69:ProjectViewProjectNode" />
               <item name="Sun-city" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="system" type="462c0819:PsiDirectoryNode" />
               <item name="language" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sun-city" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sun-city" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sun-city" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sun-city" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sun-city" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sun-city" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sun-city" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sun-city" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sun-city" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sun-city" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sun-city" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sun-city" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sun-city" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sun-city" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 7e5d846ba75820a9eb3fcb57480aeccb25575b87
             </path>
           </expand>
           <select />
@@ -229,18 +369,41 @@
       <workItem from="1533366700890" duration="8981000" />
       <workItem from="1533611939240" duration="11436000" />
       <workItem from="1533639454897" duration="11763000" />
+<<<<<<< HEAD
       <workItem from="1533802668207" duration="3473000" />
       <workItem from="1533808329274" duration="9605000" />
+=======
+      <workItem from="1533699100083" duration="7275000" />
+      <workItem from="1533726756234" duration="11995000" />
+>>>>>>> 7e5d846ba75820a9eb3fcb57480aeccb25575b87
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="72584000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17776097" />
+=======
+    <option name="totallyTimeSpent" value="78776000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="886" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17673522" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+>>>>>>> 7e5d846ba75820a9eb3fcb57480aeccb25575b87
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -294,6 +457,7 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/application/controllers/admin/Main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -319,6 +483,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 7e5d846ba75820a9eb3fcb57480aeccb25575b87
     <entry file="file://$PROJECT_DIR$/system/core/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
@@ -383,8 +549,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/admin/Main.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/admin/RequestCatThree.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="272">
           <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
@@ -496,6 +663,126 @@
             <element signature="n#add_show#1;n#Podcatalog_two_models#0;n#!!top" />
             <element signature="n#update_book#0;n#Podcatalog_two_models#0;n#!!top" />
           </folding>
+=======
+        <state relative-caret-position="798">
+          <caret line="38" column="60" selection-start-line="38" selection-start-column="60" selection-end-line="38" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/catalogs_three.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3696">
+          <caret line="176" column="17" selection-start-line="176" selection-start-column="17" selection-end-line="176" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/admin/RequestCatTwoModels.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2142">
+          <caret line="102" column="40" selection-start-line="102" selection-start-column="39" selection-end-line="102" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/admin/RequestCatThreeModels.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="185" column="48" lean-forward="true" selection-start-line="185" selection-start-column="48" selection-end-line="185" selection-end-column="48" />
+          <folding>
+            <element signature="n#insert_cat_three#0;n#RequestCatThreeModels#0;n#!!top" />
+            <element signature="n#delete_cat_three#0;n#RequestCatThreeModels#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/catalogs_two.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2294">
+          <caret line="53" column="109" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="182" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/admin/RequestCatTwo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="63" lean-forward="true" selection-start-line="1" selection-end-line="1" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/podcatalog_three.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="63" column="53" lean-forward="true" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/reserve_show.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="90" column="56" selection-start-line="90" selection-start-column="56" selection-end-line="90" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/reserve_kitchen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="52" column="44" lean-forward="true" selection-start-line="50" selection-start-column="44" selection-end-line="66" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/reserve_search_car.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="76" column="37" lean-forward="true" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/reserve_vip.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="73" column="99" selection-end-line="106" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/admin/ReserveController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/admin/MainModels.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="92" column="37" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/admin/Main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="154" column="33" selection-start-line="154" selection-start-column="20" selection-end-line="154" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/accommodation_package.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="102" column="57" selection-start-line="102" selection-start-column="57" selection-end-line="102" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/reserve_chip.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="71" column="17" lean-forward="true" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+>>>>>>> 7e5d846ba75820a9eb3fcb57480aeccb25575b87
         </state>
       </provider>
     </entry>

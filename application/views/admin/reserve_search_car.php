@@ -50,17 +50,25 @@
                                             <th>Количество людей</th>
                                             <th>Дата выезда</th>
                                             <th>Дата возвтара</th>
+                                            <th>action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
+                                    <?php
+                                    $i=1;
+                                    foreach ($data as $category): ?>
                                         <tr>
-                                            <td class="text-center">1</td>
-                                            <td class="txt-oflo">Departure point</td>
-                                            <td class="txt-oflo">Destination</td>
-                                            <td class="txt-oflo">Count people</td>                    
-                                            <td class="txt-oflo">Date of departure</td>
-                                            <td class="txt-oflo">Date of change</td>
+                                            <td class="text-center"><?= $i?></td>
+                                            <td class="txt-oflo"><?php echo $category->departure_point ?></td>
+                                            <td class="txt-oflo"><?php echo $category->destination ?></td>
+                                            <td class="txt-oflo"><?php echo $category->count_people ?></td>
+                                            <td class="txt-oflo"><?php echo $category->date_of_departure ?></td>
+                                            <td class="txt-oflo"><?php echo $category->date_of_change ?></td>
+                                            <td>  <button type="button" class="btn btn-danger delete_cat" data-id="<?php echo $category->id?>">Delete</button></td>
                                         </tr>
+                                        <?php
+                                        $i++;
+                                    endforeach;?>
                                     </tbody>
                                 </table>
                             </div>
@@ -72,3 +80,19 @@
         <!-- ============================================================== -->
         <!-- End Page wrapper  -->
         <!-- ============================================================== -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            // DELETE
+            $(".delete_cat").on('click', function(){
+                var cat_id = $(this).data('id');
+
+                $.ajax({
+                    method: "POST",
+                    url: "/admin/reservecontroller/delete_transport",
+                    data: {'id': cat_id},
+                }).done(function(){
+                    window.location="/admin/reserve_search_car";
+                });
+            });
+        </script>

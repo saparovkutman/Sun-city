@@ -48,15 +48,23 @@
                                             <th>Дата</th>
                                             <th>Время</th>                                            
                                             <th>Количество людей</th>
+                                            <th>action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
+                                    <?php
+                                    $i=1;
+                                    foreach ($data as $category): ?>
                                         <tr>
-                                            <td class="text-center">1</td>
-                                            <td class="txt-oflo">Date</td>
-                                            <td class="txt-oflo">Type of chip</td>
-                                            <td class="txt-oflo">Count people</td>                     
+                                            <td class="text-center"><?= $i?></td>
+                                            <td class="txt-oflo"><?php echo $category->date ?></td>
+                                            <td class="txt-oflo"><?php echo $category->time ?></td>
+                                            <td class="txt-oflo"><?php echo $category->count_people ?></td>
+                                            <td>  <button type="button" class="btn btn-danger delete_cat" data-id="<?php echo $category->id?>">Delete</button></td>
                                         </tr>
+                                        <?php
+                                        $i++;
+                                    endforeach;?>
                                     </tbody>
                                 </table>
                             </div>
@@ -68,3 +76,19 @@
         <!-- ============================================================== -->
         <!-- End Page wrapper  -->
         <!-- ============================================================== -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            // DELETE
+            $(".delete_cat").on('click', function(){
+                var cat_id = $(this).data('id');
+
+                $.ajax({
+                    method: "POST",
+                    url: "/admin/reservecontroller/delete_show",
+                    data: {'id': cat_id},
+                }).done(function(){
+                    window.location="/admin/reserve_show";
+                });
+            });
+        </script>
