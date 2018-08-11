@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1f63636-2abc-45b8-85b8-9c707155f86c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/admin/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/admin/Main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/admin/ReserveController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/admin/ReserveController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/admin/MainModels.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/admin/MainModels.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/admin/reserve_kitchen.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/reserve_kitchen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/admin/reserve_show.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/reserve_show.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/main/package.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/main/package.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/main/package_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/main/package_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/main/restaurants.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/main/restaurants.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/main/restaurants_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/main/restaurants_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/main/subcategory_one.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/main/subcategory_one.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/main/tichet.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/main/tichet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/main/tichet_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/main/tichet_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/main/transportation.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/main/transportation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_reserves (1).sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sub_category_one_info.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users_admin.sql" beforeDir="false" />
-    </list>
+    <list default="true" id="e1f63636-2abc-45b8-85b8-9c707155f86c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +216,7 @@
       <path value="$PROJECT_DIR$/assets/admin/assets/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1040" />
@@ -353,15 +332,15 @@
       <workItem from="1533812088190" duration="9556000" />
       <workItem from="1533827373654" duration="6811000" />
       <workItem from="1533898870391" duration="14878000" />
-      <workItem from="1533971344510" duration="2982000" />
+      <workItem from="1533971344510" duration="3278000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115528000" />
+    <option name="totallyTimeSpent" value="115824000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="886" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18766066" />
