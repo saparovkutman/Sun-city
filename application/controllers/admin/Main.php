@@ -31,7 +31,6 @@ class Main extends CI_Controller {
 		$this->load->view('admin/catalogs_one', $data);
 		$this->load->view('admin/footer/footer.php');
 	}
-<<<<<<< HEAD
     
     
     //update
@@ -43,8 +42,7 @@ class Main extends CI_Controller {
         );
         $this->load->view('admin/catalogs_one',$data);
         $this->load->view('admin/footer/footer.php');
-=======
->>>>>>> 1d745d4806d82fa4844f10836599705bd4ff7a84
+    }
 
 
 //========================= CATALOG TWO ==========================//
@@ -73,7 +71,7 @@ class Main extends CI_Controller {
 		$this->load->view('admin/catalogs_three', $data);
 		$this->load->view('admin/footer/footer.php');
 	}
-<<<<<<< HEAD
+
 
 
 //========================= SUBCATALOGS THREE ==========================//
@@ -81,11 +79,11 @@ class Main extends CI_Controller {
     {
         $this->load->model('admin/mainmodels');
         $result = $this->mainmodels->get_podcatalog_three($id);
-=======
+    }
+
     //update
     public function edit_cat_three(){
         $result = $this->MainModels->get_id_three();
->>>>>>> b15d6bcd47d4cf3e6af8568bd9be75dcac9ef252
         $data = array(
             "data" => $result,
             'cat_id'=>$id

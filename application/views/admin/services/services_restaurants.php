@@ -1,12 +1,13 @@
         <!-- ============================================================== -->
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
+        <input type="hidden" class="url" value="<?=base_url()?>">
         <div class="page-wrapper">
             <!-- ============================================================== -->
             <!-- Container fluid  -->
             <!-- ============================================================== -->
             <div class="container-fluid">
-                <h3 style="text-align: center">Услуги(каталог 2)</h3>
+                <h3 style="text-align:center">Бронирование ресторана</h3>
                 <!-- ============================================================== -->
                 <!-- Bread crumb and right sidebar toggle -->
                 <!-- ============================================================== -->
@@ -20,6 +21,7 @@
                         </div>
                     </div>
                 </div>
+                <button type="button" class="btn btn-primary open-modal" data-modalka_id="#modal_add_services">Add</button>
                 <!-- ============================================================== -->
                 <!-- End Bread crumb and right sidebar toggle -->
                 <!-- ============================================================== -->
@@ -40,14 +42,13 @@
                             <div class="col-lg-4 col-xlg-3 col-md-5">
                         <div class="card">
                             <div class="card-body">
-                               <a href="add_services/<?php echo $row->id ?>">
                                 <center class="m-t-30"><img src="<?=$image?>" width="300" class="img-thumbnail"/>
-                                </a>
                                     <h4 class="card-title m-t-10"><?=$row->title?></h4>
-                                    <h6 class="card-subtitle"><?=$row->description?></h6>                            
-                                    <button data-id="<?=$row->id?>" data-img="<?=$row->img_name?>"
+                                    <h6 class="card-subtitle"><?=$row->description?></h6>
+                                    <h6 class="card-subtitle"><?=$row->date_time?></h6>
+                                    <button data-id="<?=$row->id?>" data-time="<?=$row->date_time?>" data-img="<?=$row->img_name?>"
                                     data-title="<?=$row->title?>" data-desc="<?=$row->description?>" type="button" class="edit btn btn-success open-modal" data-modalka_id="#modal_edit">Update</button>
-                                    <button data-id="<?=$row->id?>" data-img="<?=$row->img_name?>" type="button" class="delete_cat btn btn-danger">Delete</button>
+                                    <button data-id="<?=$row->id?>" data-img="<?=$row->img_name?>" type="button" class="delete_res btn btn-danger">Delete</button>
                                 </center>
                             </div>
                         </div>
@@ -69,7 +70,7 @@
         <!-- ============================================================== -->
         
         <!-- modal -->
-
+<!-- modalka для добавление -->
         <div class="modals" id="modal_add_services">
     <div class="maska close-modal" data-modalka_id="#modal_add_services"></div>
     <div class="modal_content">
@@ -78,15 +79,18 @@
         </span><br><br>
         <div class="content">
             <form id="forma_add_uslugi" class="w3-container"  action="javascript:void(0)" method="post" enctype="multipart/form-data">
-                <p><label style="float: left;">Заголовок</label>
+                <p><label style="float: left;">Название отеля</label>
                     <input id="add_title" class="w3-input w3-border form-control" name="title" type="text">
                 </p>
                 <p><label style="float: left">Описание</label>
                     <textarea id="add_content" rows="6" class="w3-input w3-border form-control" name="content"></textarea>
                 </p>
+                <p><label style="float: left">Время</label>
+                    <input id="add_time" class="w3-input w3-border form-control" name="add_time" type="text">
+                </p>
                 <input id="add_img" class="w3-button w3-white form-control" type="file" name="img_add" style="float: left;">
                 <br><br>
-                <input id="add_uslugi" class="w3-button w3-indigo" type="submit" value="button" style="float:right;">
+                <input id="add_rest" class="w3-button w3-indigo" type="submit" value="Добавить" style="float:right;">
             </form>
         </div>
     </div>
@@ -106,11 +110,15 @@
                 <p><label style="float: left">Описание</label>
                     <textarea id="update_content" rows="6" class="w3-input w3-border form-control" name="content"></textarea>
                 </p>
+                <p><label style="float: left">Время</label>
+                    <input id="update_date" class="w3-input w3-border form-control" name="date_time" type="text" >
+                </p>
+                <input type="hidden" class="url" value="<?=base_url()?>">
                 <input id="update_id" class="form-control" type="text" name="id" >
                 <input id="update_img" class="w3-button w3-white form-control" type="file" name="img_add" style="float: left;">
-                <input id="update_img_name" class="w3-button w3-white form-control" type="hidden" name="img_name" style="float: left;">
+                <input id="update_img_name" class="w3-button w3-white form-control" type="hidden" name="old_img" style="float: left;">
                 <br><br>
-                <input id="update_cat_two" class="w3-button w3-indigo" type="submit" value="Изменить" style="float:right;">
+                <input id="update_restaurants" class="w3-button w3-indigo" type="submit" value="Изменить" style="float:right;">
             </form>
         </div>
     </div>
@@ -132,14 +140,14 @@
             var modal_id = $(this).data('modalka_id');
             $(modal_id).hide();
         });
-
-
-        $('#add_uslugi').on('click',function(){
+        //Добавление
+        $('#add_rest').on('click',function(){
             var form_add= $("#forma_add_uslugi")[0];
             var vse_polya_add= new FormData(form_add);
+            var url = $('.url').val();
             $.ajax({
                 method: "POST",
-                url: "insert_uslugi",
+                url: url+"index.php/admin/podcatalog_two/add_restaurants",
                 data: vse_polya_add,
                 contentType: false,
                 processData: false,
@@ -156,19 +164,22 @@
             var cat_title = $(this).data("title");
             var cat_content = $(this).data("desc");
             var cat_image_name = $(this).data("img");
+            var cat_date_time = $(this).data("time");
 
             $("#update_title").val(cat_title);
             $("#update_id").val(cat_id);
             $("#update_content").val(cat_content);
             $("#update_img_name").val(cat_image_name);
+            $("#update_date").val(cat_date_time);
         });
 
-    $("#update_cat_two").on('click', function(){
+    $("#update_restaurants").on('click', function(){
             var form_edit= $("#forma_update")[0];
             var vse_polya_add= new FormData(form_edit);
+            var url = $('.url').val();
             $.ajax({
                 method: "POST",
-                url: "update_cat",
+                url: url+"index.php/admin/podcatalog_two/update_restaurants",
                 data: vse_polya_add,
                 contentType: false,
                 processData: false,
@@ -180,15 +191,16 @@
         });
 
         // DELETE
-        $(".delete_cat").on('click', function(){
+        $(".delete_res").on('click', function(){
             var cat_id = $(this).data('id');
             var cat_img = $(this).data('img');
+            var url = $('.url').val();
             $.ajax({
                 method: "POST",
-                url: "delete_cat_two",
+                url: url+"index.php/admin/podcatalog_two/delete_res",
                 data: {'id': cat_id, 'img':cat_img},
             }).done(function(){
-                // window.location="/admin/catalogs_one";
+                alert('удалено');
             });
         });
 
