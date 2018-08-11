@@ -1,5 +1,9 @@
 <div class="article">
 <div class="subdirectory">
+    <div class="link_category">
+        <a href="">Home<span class="arrow"></span></a>
+        <a href="" class="active">Vip<span class="arrow"></span></a>
+    </div>
     <h3>Elite reservation service</h3>
     <h5>Enjoy free access to the Suncity VIP Club in many of the five-star hotels across Macau, where you shall experience thoughtful entertainment services. Equipped with the state-of-the-art leisure facilities, we offer lavish personalized hospitality and superb individualized service, allowing you to experience the excitement of “Asia"s Las Vegas” both day and night!
     </h5>

@@ -8,7 +8,7 @@
  * @version 1.0
  */
 
-class Authit {
+class AuthitAllUser {
 
 	private $CI;
 	protected $PasswordHash;
@@ -19,7 +19,7 @@ class Authit {
 
 		$this->CI->load->database();
 		$this->CI->load->library('session');
-		$this->CI->load->model('admin/authit_model');
+		$this->CI->load->model('authitalluser_model');
 		$this->CI->config->load('authit');
 	}
 	
@@ -30,7 +30,7 @@ class Authit {
 	
 	public function login($email, $password)
 	{
-		$user = $this->CI->authit_model->get_user_by_email($email);
+		$user = $this->CI->authitalluser_model->get_user_by_email($email);
 		if($user){
 			if(password_verify($password, $user->password)){
 				unset($user->password);
@@ -38,7 +38,7 @@ class Authit {
 					'logged_in' => true,
 					'user' => $user
 				));
-				$this->CI->authit_model->update_user($user->id, array('last_login' => date('Y-m-d H:i:s')));
+				$this->CI->authitalluser_model->update_user($user->id, array('last_login' => date('Y-m-d H:i:s')));
 				return true;
 			}
 		}
@@ -55,23 +55,21 @@ class Authit {
 		}
 	}
 	
-	public function signup($email, $password, $fio)
+	public function signup($fullname, $email, $password, $number)
 	{
-		$user = $this->CI->authit_model->get_user_by_email($email);
+		$user = $this->CI->authitalluser_model->get_user_by_email($email);
 		if($user) return false;
 
 		$password = password_hash($password, PASSWORD_DEFAULT);
-		$this->CI->authit_model->create_user($email, $password, $fio);
+		$this->CI->authitalluser_model->create_user($fullname, $email, $password, $number);
 		return true;
 	}
 	
 	public function reset_password($user_id, $new_password)
 	{
 		$new_password = password_hash($new_password, PASSWORD_DEFAULT);
-		$this->CI->authit_model->update_user($user_id, array('password' => $new_password));
+		$this->CI->authitalluser_model->update_user($user_id, array('password' => $new_password));
 	}
-    
- 
 	
 }
 

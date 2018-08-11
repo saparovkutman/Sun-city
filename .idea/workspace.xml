@@ -1,8 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="e1f63636-2abc-45b8-85b8-9c707155f86c" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="e1f63636-2abc-45b8-85b8-9c707155f86c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/admin/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/admin/Main.php" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/application/controllers/admin/Podcatalog_two.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/admin/Podcatalog_two.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/catalogs_one.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/catalogs_one.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/podcatalogs_two.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/podcatalogs_two.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/cat_two/28222b35b5029b6f73e7a93810d69a39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/cat_two/4403aa9e06b83848338b4a5ab24a85c2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/cat_two/6b0ab4bfa9fb673262716fba2a5392bc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/cat_two/d0be57c494b05c8b9d44372f2d5f7a5e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/cat_two/d6ba8be958fa7a7c664be8f215307927.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/cat_two/e8e80116e26e439bf4f288017e4ec4fb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/cat_two/ffb222224e37c62a8316b1ec0889c7d6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/thumb/cat_two/28222b35b5029b6f73e7a93810d69a39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/thumb/cat_two/4403aa9e06b83848338b4a5ab24a85c2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/thumb/cat_two/6b0ab4bfa9fb673262716fba2a5392bc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/thumb/cat_two/d0be57c494b05c8b9d44372f2d5f7a5e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/thumb/cat_two/d6ba8be958fa7a7c664be8f215307927.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/thumb/cat_two/e8e80116e26e439bf4f288017e4ec4fb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/thumb/cat_two/ffb222224e37c62a8316b1ec0889c7d6.jpg" beforeDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/application/models/admin/MainModels.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/admin/MainModels.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/admin/RequestCatThreeModels.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/admin/RequestCatThreeModels.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/catalogs_three.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/catalogs_three.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/podcatalog_three.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/podcatalog_three.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/reserve_chip.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/reserve_chip.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/reserve_kitchen.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/reserve_kitchen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/reserve_search_car.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/reserve_search_car.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/reserve_show.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/reserve_show.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/reserve_vip.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/reserve_vip.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/cat_three/3e5cfdc043957db74bf0445f9096a647.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/cat_three/3f568b875073003d94584f733830e12c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/cat_three/4f9ffe7370c2f80cff11e2e23350bd68.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/cat_three/68a822eb1f255edefce3fc27b13f3b61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/cat_three/77a97538cf4bcbf32a4036fd97f7c2eb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/cat_three/88d9fc938b6099211f41394b8f8146a7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/cat_three/a50881bc0359e4aedb487adada47ba47.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/cat_three/c23c6f134aab39865819bfb878334341.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/cat_three/e157c83b415609128a777bfe01c0e0c5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/images/cat_three/fead1e06c5e78f42249d8b57614897ef.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/thumb/cat_three/3e5cfdc043957db74bf0445f9096a647.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/thumb/cat_three/4f9ffe7370c2f80cff11e2e23350bd68.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/thumb/cat_three/68a822eb1f255edefce3fc27b13f3b61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/thumb/cat_three/88d9fc938b6099211f41394b8f8146a7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/thumb/cat_three/c23c6f134aab39865819bfb878334341.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_reserves.sql" beforeDir="false" />
+>>>>>>> 7e5d846ba75820a9eb3fcb57480aeccb25575b87
+    </list>
+>>>>>>> 7e3f7f42e20863129c5558e98d6c0da460901e1d
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,11 +109,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
               <caret line="20" column="50" lean-forward="true" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+=======
+      <file leaf-file-name="services_book.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/admin/services/services_book.php">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="136">
+              <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+              <folding>
+                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#7504#8024#0#HTML" />
+                <element signature="e#8083#8595#0#HTML" />
+              </folding>
+=======
+            <state relative-caret-position="205">
+              <caret line="154" column="33" selection-start-line="154" selection-start-column="20" selection-end-line="154" selection-end-column="33" />
+>>>>>>> 7e3f7f42e20863129c5558e98d6c0da460901e1d
             </state>
           </provider>
         </entry>
@@ -112,21 +183,59 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/main/package.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="86">
               <caret line="67" column="57" selection-start-line="67" selection-start-column="57" selection-end-line="67" selection-end-column="57" />
+=======
+            <state relative-caret-position="42">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="23" />
+>>>>>>> 7e5d846ba75820a9eb3fcb57480aeccb25575b87
+>>>>>>> 7e3f7f42e20863129c5558e98d6c0da460901e1d
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="Podcatalog_two_models.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/models/admin/Podcatalog_two_models.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="205" column="14" lean-forward="true" selection-start-line="205" selection-start-column="14" selection-end-line="205" selection-end-column="14" />
+              <folding>
+                <element signature="n#__construct#0;n#Podcatalog_two_models#0;n#!!top" />
+                <element signature="n#image#0;n#Podcatalog_two_models#0;n#!!top" />
+                <element signature="n#insert_podcat_two#0;n#Podcatalog_two_models#0;n#!!top" />
+                <element signature="n#update_podcat_two#0;n#Podcatalog_two_models#0;n#!!top" />
+                <element signature="n#delete_cat_two#0;n#Podcatalog_two_models#0;n#!!top" />
+                <element signature="n#get_restaurants#0;n#Podcatalog_two_models#0;n#!!top" />
+                <element signature="n#update_restaurants#0;n#Podcatalog_two_models#0;n#!!top" />
+                <element signature="n#add_restaurants#0;n#Podcatalog_two_models#0;n#!!top" />
+                <element signature="n#delete_res#0;n#Podcatalog_two_models#0;n#!!top" />
+                <element signature="n#get#0;n#Podcatalog_two_models#0;n#!!top" />
+                <element signature="n#add_show#0;n#Podcatalog_two_models#0;n#!!top" />
+                <element signature="n#delete_res#1;n#Podcatalog_two_models#0;n#!!top" />
+                <element signature="n#get_book#0;n#Podcatalog_two_models#0;n#!!top" />
+                <element signature="n#add_show#1;n#Podcatalog_two_models#0;n#!!top" />
+                <element signature="n#update_book#0;n#Podcatalog_two_models#0;n#!!top" />
+              </folding>
+=======
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/main/subcategory_one.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="294">
               <caret line="200" column="25" lean-forward="true" selection-start-line="200" selection-start-column="18" selection-end-line="200" selection-end-column="31" />
+=======
+            <state relative-caret-position="-68">
+              <caret line="73" column="99" selection-end-line="106" selection-end-column="7" />
+>>>>>>> 7e5d846ba75820a9eb3fcb57480aeccb25575b87
+>>>>>>> 7e3f7f42e20863129c5558e98d6c0da460901e1d
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+=======
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/main/transportation.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -145,6 +254,7 @@
           </provider>
         </entry>
       </file>
+>>>>>>> 7e5d846ba75820a9eb3fcb57480aeccb25575b87
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -166,13 +276,27 @@
         <option value="$PROJECT_DIR$/application/models/RequestCatTwoModels.php" />
         <option value="$PROJECT_DIR$/application/controllers/admin/RequestCatTwo.php" />
         <option value="$PROJECT_DIR$/application/models/admin/RequestCatTwoModels.php" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/application/views/admin/catalogs_one.php" />
+=======
+        <option value="$PROJECT_DIR$/application/config/config.php" />
+>>>>>>> 7e3f7f42e20863129c5558e98d6c0da460901e1d
         <option value="$PROJECT_DIR$/application/models/admin/RequestCatOneModels.php" />
         <option value="$PROJECT_DIR$/application/views/admin/catalogs_two.php" />
         <option value="$PROJECT_DIR$/application/views/admin/subcatalog_two.php" />
         <option value="$PROJECT_DIR$/application/controllers/admin/RequestCatThree.php" />
         <option value="$PROJECT_DIR$/application/views/admin/catalogs_three.php" />
         <option value="$PROJECT_DIR$/application/models/admin/RequestCatThreeModels.php" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/application/views/admin/catalogs_one.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/services/services_transport.php" />
+        <option value="$PROJECT_DIR$/application/controllers/admin/Podcatalog_two.php" />
+        <option value="$PROJECT_DIR$/application/models/admin/Podcatalog_two_models.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/services/services_restaurants.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/podcatalogs_two.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/services/services_show.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/services/services_book.php" />
+=======
         <option value="$PROJECT_DIR$/application/views/admin/podcatalog_three.php" />
         <option value="$PROJECT_DIR$/application/views/admin/reserve_search_car.php" />
         <option value="$PROJECT_DIR$/application/views/admin/reserve_chip.php" />
@@ -193,12 +317,18 @@
         <option value="$PROJECT_DIR$/application/controllers/admin/ReserveController.php" />
         <option value="$PROJECT_DIR$/application/controllers/ActionReserve.php" />
         <option value="$PROJECT_DIR$/application/controllers/admin/Main.php" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/application/controllers/Main.php" />
         <option value="$PROJECT_DIR$/application/views/main/subcategory_one.php" />
         <option value="$PROJECT_DIR$/application/views/main/package_form.php" />
         <option value="$PROJECT_DIR$/application/views/main/restaurants_form.php" />
         <option value="$PROJECT_DIR$/application/views/main/tichet_form.php" />
         <option value="$PROJECT_DIR$/application/views/main/transportation.php" />
+=======
+        <option value="$PROJECT_DIR$/application/config/routes.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/accommodation_package.php" />
+>>>>>>> 7e5d846ba75820a9eb3fcb57480aeccb25575b87
+>>>>>>> 7e3f7f42e20863129c5558e98d6c0da460901e1d
       </list>
     </option>
   </component>
@@ -237,11 +367,15 @@
             <path>
               <item name="Sun-city" type="b2602c69:ProjectViewProjectNode" />
               <item name="Sun-city" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Sun-city" type="b2602c69:ProjectViewProjectNode" />
               <item name="Sun-city" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="language" type="462c0819:PsiDirectoryNode" />
+=======
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -282,6 +416,7 @@
               <item name="Sun-city" type="b2602c69:ProjectViewProjectNode" />
               <item name="Sun-city" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 7e5d846ba75820a9eb3fcb57480aeccb25575b87
             </path>
           </expand>
           <select />
@@ -292,6 +427,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -326,18 +462,39 @@
       <workItem from="1533366700890" duration="8981000" />
       <workItem from="1533611939240" duration="11436000" />
       <workItem from="1533639454897" duration="11763000" />
+<<<<<<< HEAD
+      <workItem from="1533802668207" duration="3473000" />
+      <workItem from="1533808329274" duration="9605000" />
+=======
       <workItem from="1533699100083" duration="7275000" />
+<<<<<<< HEAD
       <workItem from="1533726756234" duration="13113000" />
       <workItem from="1533785269199" duration="1407000" />
       <workItem from="1533812088190" duration="9556000" />
       <workItem from="1533827373654" duration="6811000" />
       <workItem from="1533898870391" duration="14878000" />
       <workItem from="1533971344510" duration="3287000" />
+=======
+      <workItem from="1533726756234" duration="11995000" />
+>>>>>>> 7e5d846ba75820a9eb3fcb57480aeccb25575b87
+>>>>>>> 7e3f7f42e20863129c5558e98d6c0da460901e1d
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="115833000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="72584000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17776097" />
+=======
+    <option name="totallyTimeSpent" value="78776000" />
+>>>>>>> 7e3f7f42e20863129c5558e98d6c0da460901e1d
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
@@ -352,16 +509,44 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+>>>>>>> 7e5d846ba75820a9eb3fcb57480aeccb25575b87
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32980132" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+<<<<<<< HEAD
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32980132" />
+=======
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+>>>>>>> 7e3f7f42e20863129c5558e98d6c0da460901e1d
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+    <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17549168" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Database" order="3" />
+<<<<<<< HEAD
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18059126" />
@@ -383,6 +568,15 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
+=======
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+>>>>>>> 7e3f7f42e20863129c5558e98d6c0da460901e1d
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,7 +585,13 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/application/controllers/admin/RequestCatThree.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="798">
@@ -478,12 +678,59 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/admin/pages-blank.html">
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/application/controllers/admin/Main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="8" lean-forward="true" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/catalogs.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/admin/modalka.html" />
+    <entry file="file://$PROJECT_DIR$/application/views/admin/footer/footer.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/admin/header/header.php" />
+    <entry file="file://$PROJECT_DIR$/application/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="80" column="27" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+=======
+>>>>>>> 7e5d846ba75820a9eb3fcb57480aeccb25575b87
+    <entry file="file://$PROJECT_DIR$/system/core/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Codeigniter/coder.kg/www/application/views/insert_model.php" />
+    <entry file="file://C:/Codeigniter/beshbarmak.kg/www/application/config/routes.php" />
+    <entry file="file://C:/Codeigniter/coder.kg/www/application/config/routes.php" />
+    <entry file="file://C:/Codeigniter/shop.kg/www/application/controllers/Category.php" />
+    <entry file="file://C:/Codeigniter/shop.kg/www/application/controllers/Orders.php" />
+    <entry file="file://C:/Codeigniter/beshbarmak.kg/www/application/controllers/Orders.php" />
+    <entry file="file://C:/Codeigniter/coder.kg/www/application/controllers/Images.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/admin/index.php" />
+    <entry file="file://$PROJECT_DIR$/index.php">
+>>>>>>> 7e3f7f42e20863129c5558e98d6c0da460901e1d
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1848">
           <caret line="44" column="65" selection-start-line="44" selection-start-column="65" selection-end-line="44" selection-end-column="65" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/application/models/admin/RequestCatTwoModels.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -492,12 +739,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/admin/podcatalogs_two.php">
+=======
+    <entry file="file://C:/Codeigniter/coder.kg/www/application/controllers/Cars.php" />
+    <entry file="file://$PROJECT_DIR$/system/core/Model.php">
+>>>>>>> 7e3f7f42e20863129c5558e98d6c0da460901e1d
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1176">
           <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/application/models/admin/RequestSubCatOneModels.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-378" />
@@ -593,6 +845,159 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2100">
           <caret line="100" column="37" selection-start-line="100" selection-start-column="29" selection-end-line="100" selection-end-column="50" />
+=======
+    <entry file="file://C:/Codeigniter/coder.kg/www/application/models/Models_model.php" />
+    <entry file="file://C:/Codeigniter/coder.kg/www/application/views/insert_car.php" />
+    <entry file="file://C:/Codeigniter/coder.kg/www/application/controllers/Category.php" />
+    <entry file="file://C:/Codeigniter/coder.kg/www/application/controllers/Models.php" />
+    <entry file="file://D:/НЕ ТРОГАТЬ/Codeigniter/Улан/cart/application/controllers/Orders.php" />
+    <entry file="file://D:/НЕ ТРОГАТЬ/Codeigniter/Улан/cart/application/controllers/Goods.php" />
+    <entry file="file://D:/НЕ ТРОГАТЬ/Codeigniter/Улан/cart/application/views/admin.php" />
+    <entry file="file://$PROJECT_DIR$/application/models/RequestCatTwoModels.php" />
+    <entry file="file://D:/НЕ ТРОГАТЬ/Codeigniter/Улан/cart/application/controllers/Admin.php" />
+    <entry file="file://$PROJECT_DIR$/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/admin/RequestCatOne.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/admin/podcatalogs.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/admin/users.php" />
+    <entry file="file://$PROJECT_DIR$/application/models/admin/MainModels.php" />
+    <entry file="file://$PROJECT_DIR$/application/controllers/admin/RequestCatTwo.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/admin/catalogs_three.php" />
+    <entry file="file://$PROJECT_DIR$/application/models/admin/RequestCatTwoModels.php" />
+    <entry file="file://$PROJECT_DIR$/application/controllers/admin/RequestCatThree.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/admin/catalogs_two.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/admin/podcatalog_three.php" />
+    <entry file="file://$PROJECT_DIR$/application/models/admin/RequestCatThreeModels.php" />
+    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/admin/RequestCatThree.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="272">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/catalogs_one.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="177" column="31" selection-start-line="177" selection-start-column="31" selection-end-line="177" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/admin/RequestCatOneModels.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="63" selection-end-column="5" />
+          <folding>
+            <element signature="n#image#0;n#RequestCatOneModels#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/services/services_transport.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/admin/Podcatalog_two.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding>
+            <element signature="n#__construct#0;n#Podcatalog_two#0;n#!!top" />
+            <element signature="n#insert_uslugi#0;n#Podcatalog_two#0;n#!!top" />
+            <element signature="n#update_cat#0;n#Podcatalog_two#0;n#!!top" />
+            <element signature="n#delete_cat_two#0;n#Podcatalog_two#0;n#!!top" />
+            <element signature="n#update_restaurants#0;n#Podcatalog_two#0;n#!!top" />
+            <element signature="n#add_restaurants#0;n#Podcatalog_two#0;n#!!top" />
+            <element signature="n#delete_res#0;n#Podcatalog_two#0;n#!!top" />
+            <element signature="n#add_services#0;n#Podcatalog_two#0;n#!!top" />
+            <element signature="n#add_show#0;n#Podcatalog_two#0;n#!!top" />
+            <element signature="n#update_show#0;n#Podcatalog_two#0;n#!!top" />
+            <element signature="n#delete_show#0;n#Podcatalog_two#0;n#!!top" />
+            <element signature="n#add_book#0;n#Podcatalog_two#0;n#!!top" />
+            <element signature="n#update_book#0;n#Podcatalog_two#0;n#!!top" />
+            <element signature="n#delete_book#0;n#Podcatalog_two#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/services/services_restaurants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/podcatalogs_two.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/services/services_show.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/services/services_book.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#7504#8024#0#HTML" />
+            <element signature="e#8083#8595#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/admin/Podcatalog_two_models.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="205" column="14" lean-forward="true" selection-start-line="205" selection-start-column="14" selection-end-line="205" selection-end-column="14" />
+          <folding>
+            <element signature="n#__construct#0;n#Podcatalog_two_models#0;n#!!top" />
+            <element signature="n#image#0;n#Podcatalog_two_models#0;n#!!top" />
+            <element signature="n#insert_podcat_two#0;n#Podcatalog_two_models#0;n#!!top" />
+            <element signature="n#update_podcat_two#0;n#Podcatalog_two_models#0;n#!!top" />
+            <element signature="n#delete_cat_two#0;n#Podcatalog_two_models#0;n#!!top" />
+            <element signature="n#get_restaurants#0;n#Podcatalog_two_models#0;n#!!top" />
+            <element signature="n#update_restaurants#0;n#Podcatalog_two_models#0;n#!!top" />
+            <element signature="n#add_restaurants#0;n#Podcatalog_two_models#0;n#!!top" />
+            <element signature="n#delete_res#0;n#Podcatalog_two_models#0;n#!!top" />
+            <element signature="n#get#0;n#Podcatalog_two_models#0;n#!!top" />
+            <element signature="n#add_show#0;n#Podcatalog_two_models#0;n#!!top" />
+            <element signature="n#delete_res#1;n#Podcatalog_two_models#0;n#!!top" />
+            <element signature="n#get_book#0;n#Podcatalog_two_models#0;n#!!top" />
+            <element signature="n#add_show#1;n#Podcatalog_two_models#0;n#!!top" />
+            <element signature="n#update_book#0;n#Podcatalog_two_models#0;n#!!top" />
+          </folding>
+=======
+        <state relative-caret-position="798">
+          <caret line="38" column="60" selection-start-line="38" selection-start-column="60" selection-end-line="38" selection-end-column="60" />
+>>>>>>> 7e3f7f42e20863129c5558e98d6c0da460901e1d
         </state>
       </provider>
     </entry>
@@ -710,8 +1115,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/main/tichet_form.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="310">
           <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+=======
+        <state relative-caret-position="37">
+          <caret line="71" column="17" lean-forward="true" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+>>>>>>> 7e5d846ba75820a9eb3fcb57480aeccb25575b87
+>>>>>>> 7e3f7f42e20863129c5558e98d6c0da460901e1d
         </state>
       </provider>
     </entry>

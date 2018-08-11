@@ -1,7 +1,11 @@
 <div id="kitchen" class="article">
     <div class="subdirectory">
-        
+        <div class="link_category">
+            <a href="">Home<span class="arrow"></span></a>
+            <a href="" class="active">Vip<span class="arrow"></span></a>
+        </div>
         <h3>Information filling for restaurant booking</h3>
+<<<<<<< HEAD
         <div class="form_bron" id="modal_add">
             <div class="form_content">
                 <form id="forma_add" action="javascript:void(0)" method="post" enctype="multipart/form-data">
@@ -26,10 +30,38 @@
                     <input id="add_to_kitchen" type="submit" value="Book now"  class="bron_submit">
                 </form>
             </div>
+=======
+        <div class="form_bron">
+            <form action="">
+                <div class="res_form">
+                    <label class="bron_label_style_one">Data:</label>
+                    <input type="text" name="" value="" class="tcal">
+                </div>
+                <div class="res_form">
+                    <label class="bron_label_style_one">Time:</label>
+
+                    <input type="time" name="" value="" class="bron_input_style_two">
+
+                </div>
+                <div class="res_form">
+                    <label class="bron_label_style_one">Number of people:</label>
+                    <select id="options1">
+                        <option disabled selected>1</option>
+                        <option value="1">1s</option>
+                        <option value="1">1</option>
+                        <option value="1">s1</option>
+                    </select>
+                </div>
+                <div class="knopka_res">
+                    <input type="submit" value="Search now" class="bron_submit">
+                </div>
+            </form>
+>>>>>>> 7e3f7f42e20863129c5558e98d6c0da460901e1d
         </div>
     </div>
  </div>
 <script>
+<<<<<<< HEAD
     $(document).ready(function() {
         $('.navbar').addClass('direct_navbar');
         $('.direct_navbar').removeClass('navbar');
@@ -48,6 +80,19 @@
                 $("#forma_add")[0].reset();
             });
         });
+=======
+    $('.navbar').addClass('direct_navbar');
+    $('.direct_navbar').removeClass('navbar');
+    CustomSelect.create(document.getElementById('options1'), {
+        customClasses: {
+            active: 'cc_active',
+            base: 'cc',
+            control: 'cc__control',
+            option: 'cc__item',
+            options: 'cc__options',
+            select: 'cc__select'
+        }
+>>>>>>> 7e3f7f42e20863129c5558e98d6c0da460901e1d
     });
 </script>
  

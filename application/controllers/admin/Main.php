@@ -34,6 +34,22 @@ class Main extends CI_Controller {
 		$this->load->view('admin/catalogs_one', $data);
 		$this->load->view('admin/footer/footer.php');
 	}
+<<<<<<< HEAD
+    
+    
+    //update
+    public function edit_cat_one(){
+        $this->load->model('admin/MainModels');
+        $result = $this->MainModels->get_id_one();
+        $data = array(
+            "data" => $result
+        );
+        $this->load->view('admin/catalogs_one',$data);
+        $this->load->view('admin/footer/footer.php');
+    }
+
+=======
+>>>>>>> 7e5d846ba75820a9eb3fcb57480aeccb25575b87
 
 //========================= CATALOG TWO ==========================//
     //insert
@@ -61,12 +77,52 @@ class Main extends CI_Controller {
 		$this->load->view('admin/catalogs_three', $data);
 		$this->load->view('admin/footer/footer.php');
 	}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+
+=======
+>>>>>>> 69177ec578cf047343fdd2bfa476eb9622220f0c
+>>>>>>> 40b825f4b802e91c82a5a2753f93596d845e71eb
+
+>>>>>>> 7e3f7f42e20863129c5558e98d6c0da460901e1d
 //========================= SUBCATALOGS THREE ==========================//
     //insert
     public function podcatalog_three($id)
     {
         $this->load->model('admin/mainmodels');
         $result = $this->mainmodels->get_podcatalog_three($id);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    }
+
+    //update
+    public function edit_cat_three(){
+        $result = $this->MainModels->get_id_three();
+=======
+<<<<<<< HEAD
+
+=======
+        $data = array(
+            "data" => $result,
+            'cat_id'=>$id
+        );
+        $this->load->view('admin/podcatalog_three', $data);
+        $this->load->view('admin/footer/footer.php');
+    }
+    //update
+    public function edit_cat_three($id){
+        $this->load->model('admin/mainmodels');
+        $result = $this->mainmodels->get_id_three($id);
+>>>>>>> 69177ec578cf047343fdd2bfa476eb9622220f0c
+>>>>>>> 7e5d846ba75820a9eb3fcb57480aeccb25575b87
+>>>>>>> 40b825f4b802e91c82a5a2753f93596d845e71eb
+>>>>>>> 7e3f7f42e20863129c5558e98d6c0da460901e1d
         $data = array(
             "data" => $result,
             'cat_id'=>$id

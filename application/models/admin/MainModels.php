@@ -18,6 +18,10 @@ class MainModels extends CI_Model{
 //========================= CATALOG TWO ==========================//
     public function get_cat_two()
     {
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 7e3f7f42e20863129c5558e98d6c0da460901e1d
         $select = $this->db->get('category_two');
         $cat_two = $select->result();
         return $cat_two;
@@ -41,8 +45,13 @@ class MainModels extends CI_Model{
     }
 //=========================  ==========================//
 // get services
+<<<<<<< HEAD
     public function get_services(){
 //          $this->db->where('category_id',$id);
+=======
+    public function get_services($id){
+          $this->db->where('category_id',$id);
+>>>>>>> 7e3f7f42e20863129c5558e98d6c0da460901e1d
           $select = $this->db->get('sub_category_two');
           $cat_three = $select->result();
           return $cat_three;
@@ -56,7 +65,10 @@ class MainModels extends CI_Model{
         $user = $select->result();
         return $user;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7e3f7f42e20863129c5558e98d6c0da460901e1d
 //========================= RESTAURANTS ==========================//
     // get_kitchen
     public function get_kitchen(){
@@ -65,6 +77,13 @@ class MainModels extends CI_Model{
         $cat_kitchen = $select->result();
         return $cat_kitchen;
     }
+<<<<<<< HEAD
+=======
+/*public function get_services(){
+          $select = $this->db->get('sub_category_two');
+          return $select->result();
+}*/
+>>>>>>> 7e3f7f42e20863129c5558e98d6c0da460901e1d
 
 //========================= TICKET BOOKING(SHOW) ==========================//
     // get_show

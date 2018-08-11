@@ -1,6 +1,10 @@
 
 <div class="article">
     <div class="subdirectory">
+        <div class="link_category">
+            <a href="">Home<span class="arrow"></span></a>
+            <a href="" class="active">Vip<span class="arrow"></span></a>
+        </div>
         <h3>Exclusive Macau Travel Package</h3>
         <h5>Suncity Group is dedicated to providing you with our tailor-designed “Exclusive Macau Travel Package”. Guests shall be entitled to cash rebate, expense allowance, free stays in Macau hotels, transportation services, relaxing entertainment facilities, show tickets, restaurant reservations, personal itinerary arrangements, and other luxurious Macau travel packages designed to let you indulge in the infinite charms of Macau once they reach the specific minimum promotional chipsspending.
         </h5>
